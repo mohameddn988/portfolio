@@ -25,6 +25,8 @@
   --text-muted: rgba(255, 255, 255, 0.6);
   --border-color: rgba(255, 255, 255, 0.1);
   --bg-overlay: rgba(24, 24, 27, 0.8);
+  --bg-noise-image: url('/BgNoise.png');
+  --bg-noise-opacity: 0.75;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,8 +35,22 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: var(--bg-primary);
-  background-image: url('/BgNoise.png');
+  position: relative;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: var(--bg-noise-image);
   background-repeat: repeat;
   background-attachment: fixed;
+  opacity: var(--bg-noise-opacity);
+  pointer-events: none;
+  z-index: 60;
+}
+
+button {
+  cursor: pointer;
 }
 
