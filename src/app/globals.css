@@ -74,6 +74,25 @@ body::after {
   z-index: 60;
 }
 
+@keyframes skill-float {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(var(--float-x, 0px), var(--float-y, 0px), 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.floating-skill {
+  animation-name: skill-float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
 /* Restore text cursor for inputs */
 input[type="text"], input[type="email"], input[type="password"], textarea {
   cursor: text !important;
