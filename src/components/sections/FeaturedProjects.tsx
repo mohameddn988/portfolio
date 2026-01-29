@@ -3,6 +3,7 @@
 import React from "react";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { projects } from "@/data/projects";
+import Link from "next/link";
 
 const FeaturedProjects = () => {
   return (
@@ -109,16 +110,12 @@ const FeaturedProjects = () => {
                   )}
                 </div>
 
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="relative text-[#a78bfa] text-xs md:text-sm font-bold tracking-[0.3em] uppercase hover:text-[#c4b5fd] transition-colors w-fit pb-1 border-b-2 border-[#a78bfa] hover:border-[#c4b5fd]"
-                  >
-                    View Source Code
-                  </a>
-                )}
+                <Link
+                  href={`/projects/${project.id}`}
+                  className="relative text-secondary/80 text-xs md:text-sm font-bold tracking-[0.3em] uppercase hover:text-secondary transition-colors w-fit pb-1 border-b-2 border-secondary/80 hover:border-secondary"
+                >
+                  View Details
+                </Link>
 
                 <div className="flex gap-5 mt-2">
                   {project.link && (
@@ -126,7 +123,7 @@ const FeaturedProjects = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-zinc-500 hover:text-white transition-colors"
+                      className="text-zinc-500 hover:text-secondary transition-colors"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +147,7 @@ const FeaturedProjects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-zinc-500 hover:text-white transition-colors"
+                      className="text-zinc-500 hover:text-secondary transition-colors"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
