@@ -1,6 +1,7 @@
 "use client";
 
 import { workExperiences } from "@/data/workExperience";
+import { ArrowRight } from 'lucide-react';
 
 const WorkExperienceSection = () => {
   return (
@@ -16,12 +17,10 @@ const WorkExperienceSection = () => {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-secondary hover:text-secondary/80 transition-colors font-semibold text-lg group w-fit"
+              className="inline-flex items-center gap-2 text-secondary hover:text-secondary/80 transition-colors font-semibold text-xl group w-fit"
             >
               View resume
-              <span className="text-2xl transition-transform group-hover:translate-x-1">
-                👉
-              </span>
+              <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />
             </a>
             <div className="h-[5vh]"></div>
           </div>

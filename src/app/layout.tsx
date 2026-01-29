@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header";
 import CustomCursor from "@/components/ui/CustomCursor";
+import Contact from "@/components/Layout/Contact";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <CustomCursor />
         <Header />
         {children}
+        <Contact />
       </body>
     </html>
   );

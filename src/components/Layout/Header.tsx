@@ -27,19 +27,19 @@ export default function Header() {
           <nav className="flex items-center gap-20 backdrop-blur-md px-14 py-5 rounded-full">
             <Link
               href="/"
-              className="text-white/90 hover:text-secondary transition-colors text-sm font-medium tracking-[0.15em] uppercase"
+              className="text-white/90 hover:text-secondary transition-colors text-lg font-medium tracking-[0.15em] uppercase"
             >
               HOME
             </Link>
             <Link
               href="/projects"
-              className="text-white/90 hover:text-secondary transition-colors text-sm font-medium tracking-[0.15em] uppercase"
+              className="text-white/90 hover:text-secondary transition-colors text-lg font-medium tracking-[0.15em] uppercase"
             >
               PROJECTS
             </Link>
             <Link
               href="/about"
-              className="text-white/90 hover:text-secondary transition-colors text-sm font-medium tracking-[0.15em] uppercase"
+              className="text-white/90 hover:text-secondary transition-colors text-lg font-medium tracking-[0.15em] uppercase"
             >
               ABOUT
             </Link>
