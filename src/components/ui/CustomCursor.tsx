@@ -66,7 +66,7 @@ export default function CustomCursor() {
       }}
     >
       <img
-        src="/cursor/CustomCursor.svg"
+        src="/Cursor/CustomCursor.svg"
         alt=""
         width={CURSOR_SIZE}
         height={CURSOR_SIZE}

@@ -2,6 +2,7 @@
 
 import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { technicalSkills } from "@/data/skills";
 import { achievements } from "@/data/achievements";
@@ -25,62 +26,97 @@ export default function AboutPage() {
       />
 
       {/* Bio Section */}
-      <section className="max-w-250 mx-auto px-4 md:px-6 mt-10">
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-6">
-            <div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                Hi, I'm{" "}
-                <span className="text-secondary">
-                  Deneche mohamed seif el islem
-                </span>
-              </h2>
-              <p className="text-xl text-zinc-400 font-light">
-                Full Stack & Mobile Developer
-              </p>
-            </div>
-
-            <div className="space-y-4 text-zinc-300 leading-relaxed text-justify">
-              <p>
-                I'm a dedicated fullstack and mobile developer who thrives on
-                turning complex problems into elegant solutions. With a strong
-                foundation in both frontend and backend technologies, I enjoy
-                crafting seamless user experiences and building robust, scalable
-                applications that make a real impact.
-              </p>
-              <p>
-                My journey in tech is driven by an insatiable curiosity and a
-                commitment to continuous learning. Whether I'm architecting
-                RESTful APIs, optimizing database performance, or developing
-                cross-platform mobile apps, I embrace challenges that push my
-                technical boundaries and foster professional growth. I believe
-                in the transformative power of clean code, collaborative
-                development, and innovative thinking to create digital solutions
-                that matter.
-              </p>
-              <p>
-                Beyond coding, I'm passionate about staying current with
-                emerging technologies, contributing to open-source projects, and
-                mentoring aspiring developers. I find immense satisfaction in
-                bridging the gap between technical complexity and user-friendly
-                design, always striving to deliver products that not only
-                function flawlessly but also delight users.
-              </p>
-            </div>
-
-            {/* Quick Stats */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secondary">19+</div>
-                <div className="text-sm text-zinc-500 mt-1">Projects</div>
+      <section className="max-w-355 mx-auto px-4 md:px-6 mt-10">
+        <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-y-12 lg:gap-x-6 items-start">
+            {/* Left Column - Bio Text */}
+            <div className="space-y-6 lg:col-span-1">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                  Hi, I'm{" "}
+                  <span className="text-secondary">Deneche Mohamed</span>
+                </h2>
+                <p className="text-xl text-zinc-400 font-light">
+                  Full Stack & Mobile Developer
+                </p>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secondary">6+</div>
-                <div className="text-sm text-zinc-500 mt-1">Months Exp</div>
+
+              <div className="space-y-4 text-zinc-300 leading-relaxed text-justify">
+                <p>
+                  I'm a fullstack and mobile developer passionate about creating
+                  elegant solutions to complex problems. With expertise in both
+                  frontend and backend technologies, I build seamless, scalable
+                  applications that make a real impact.
+                </p>
+                <p>
+                  Driven by curiosity and continuous learning, I specialize in
+                  architecting APIs, optimizing databases, and developing
+                  cross-platform mobile apps. I value clean code, collaboration,
+                  and innovative thinking in creating meaningful digital
+                  solutions.
+                </p>
+                <p>
+                  Outside of coding, I stay updated with emerging technologies,
+                  contribute to open-source projects, and mentor aspiring
+                  developers, always aiming to deliver user-friendly,
+                  high-quality products.
+                </p>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-secondary">50+</div>
-                <div className="text-sm text-zinc-500 mt-1">Contributions</div>
+
+              {/* Quick Stats */}
+              <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-secondary">19+</div>
+                  <div className="text-sm text-zinc-500 mt-1">Projects</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-secondary">6+</div>
+                  <div className="text-sm text-zinc-500 mt-1">Months Exp</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-secondary">50+</div>
+                  <div className="text-sm text-zinc-500 mt-1">
+                    Contributions
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* Right Column - Images */}
+            <div className="space-y-6 lg:col-span-1 self-center">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+                {/* Left inside images block: square image */}
+                <div className="relative w-55 h-55 aspect-square justify-self-end rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-primary z-70">
+                  <Image
+                    src="/About/Myself.png"
+                    alt="Myself - Profile"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+
+                {/* Right inside images block: stacked images */}
+                <div className="flex flex-col gap-4">
+                  {/* Top-right: rectangle with same height as left image */}
+                  <div className="relative w-75 h-55 rounded-2xl overflow-hidden border border-white/10 shadow-lg bg-primary z-70">
+                    <Image
+                      src="/About/MyselfHackathon.png"
+                      alt="Myself - Work"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+
+                  {/* Bottom-right: same size as left image and aligned to start */}
+                  <div className="relative w-55 h-55 self-start rounded-2xl overflow-hidden border border-white/10 shadow-lg bg-primary z-70">
+                    <Image
+                      src="/About/IDontKnow.png"
+                      alt="Myself - Passion"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

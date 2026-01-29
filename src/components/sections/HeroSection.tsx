@@ -117,7 +117,7 @@ export default function HeroSection() {
           }}
         >
           <span className="text-white/40 tracking-[0.3em] text-md md:text-lg lg:text-xl uppercase font-bold">
-            DENECHE MOHAMED SEIF EL ISLEM
+            DENECHE MOHAMED
           </span>
           <h1 className="flex flex-col items-center leading-[0.85] font-bold text-center tracking-tight">
             {headlineLines.map((line, index) => (
