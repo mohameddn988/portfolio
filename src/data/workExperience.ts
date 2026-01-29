@@ -15,7 +15,7 @@ export const workExperiences: WorkExperience[] = [
     company: "Getgoing",
     role: "UI/UX Designer",
     period: "December 2022 - Present",
-    logo: "/companies/getgoing.svg",
+    logo: "Logo.png",
     description: "Leading UI/UX design initiatives for innovative digital products.",
     responsibilities: [
       "Design and prototype user interfaces for web and mobile applications",
@@ -30,7 +30,7 @@ export const workExperiences: WorkExperience[] = [
     company: "Waresix",
     role: "Product Designer Intern",
     period: "September - December 2022",
-    logo: "/companies/waresix.svg",
+    logo: "Logo.png",
     description: "Contributed to product design for logistics and supply chain solutions.",
     responsibilities: [
       "Designed user flows and wireframes for logistics platform",
@@ -45,7 +45,7 @@ export const workExperiences: WorkExperience[] = [
     company: "Sagara Technology",
     role: "UI/UX Designer Specialist Intern",
     period: "July - October 2022",
-    logo: "/companies/sagara.svg",
+    logo: "Logo.png",
     description: "Specialized in creating intuitive user experiences for enterprise applications.",
     responsibilities: [
       "Designed enterprise software interfaces",
@@ -60,7 +60,7 @@ export const workExperiences: WorkExperience[] = [
     company: "Vocasia x Kampus Merdeka",
     role: "UI/UX Designer Intern",
     period: "August 2021 - February 2022",
-    logo: "/companies/vocasia.svg",
+    logo: "Logo.png",
     description: "Designed educational platform interfaces and learning experiences.",
     responsibilities: [
       "Created user-centered designs for educational platform",

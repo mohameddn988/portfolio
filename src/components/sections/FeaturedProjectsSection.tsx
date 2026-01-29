@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const FeaturedProjects = () => {
   return (
-    <section className="pb-16 bg-primary">
+    <section className="pb-35 bg-primary">
       <SectionTitle
         title="Featured Projects"
         backgroundText="FEATURED"
