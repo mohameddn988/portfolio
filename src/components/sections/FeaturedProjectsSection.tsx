@@ -15,14 +15,14 @@ const FeaturedProjects = () => {
       />
 
       <div className="max-w-250 mx-auto px-4 md:px-6 mt-10 flex flex-col gap-50">
-        {projects.map((project, index) => (
+        {projects.filter(project => project.featured).map((project, index) => (
           <div
             key={index}
             className="group relative bg-linear-to-br from-[#1a1a1d] to-[#0f0f11] rounded-4xl p-5 md:p-6 border border-white/8 overflow-visible"
           >
             {/* Background Number */}
             <img
-              src={`/Project/Number${["One", "Two", "Three", "Four"][index]}.svg`}
+              src={`/Project/Number${["One", "Two", "Three", "Four"][index % 4]}.svg`}
               alt={`Project ${index + 1}`}
               className="absolute top-0 right-0 w-32 md:w-36 lg:w-40 h-auto z-0 select-none pointer-events-none transform -translate-y-1/2 translate-x-14"
             />

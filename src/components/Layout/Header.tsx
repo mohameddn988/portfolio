@@ -2,8 +2,11 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
+  const pathname = usePathname();
+  
   return (
     <header className="sticky top-0 left-0 right-0 z-50 bg-transparent">
       <div className="max-w-7xl mx-auto px-8">
@@ -27,19 +30,25 @@ export default function Header() {
           <nav className="flex items-center gap-20 backdrop-blur-md px-14 py-5 rounded-full">
             <Link
               href="/"
-              className="text-white/90 hover:text-secondary transition-colors text-lg font-medium tracking-[0.15em] uppercase"
+              className={`transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
+                pathname === '/' ? 'text-secondary' : 'text-white/90 hover:text-secondary'
+              }`}
             >
               HOME
             </Link>
             <Link
               href="/projects"
-              className="text-white/90 hover:text-secondary transition-colors text-lg font-medium tracking-[0.15em] uppercase"
+              className={`transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
+                pathname === '/projects' || pathname?.startsWith('/projects/') ? 'text-secondary' : 'text-white/90 hover:text-secondary'
+              }`}
             >
               PROJECTS
             </Link>
             <Link
               href="/about"
-              className="text-white/90 hover:text-secondary transition-colors text-lg font-medium tracking-[0.15em] uppercase"
+              className={`transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
+                pathname === '/about' ? 'text-secondary' : 'text-white/90 hover:text-secondary'
+              }`}
             >
               ABOUT
             </Link>
