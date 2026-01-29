@@ -139,7 +139,7 @@ export default function HeroSection() {
         </div>
       </section>
 
-      <section className="relative z-10 flex flex-col items-center justify-center pb-16 pt-8 mt-[5vh]">
+      <section className="relative z-10 flex flex-col items-center justify-center pb-5 pt-8 mt-[5vh]">
         <div className="relative flex items-center justify-center">
           <div className="relative h-130 w-100 sm:h-155 sm:w-120">
             <div className="absolute -inset-3.5 rounded-[42px] bg-primary" />
