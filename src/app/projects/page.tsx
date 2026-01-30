@@ -29,7 +29,7 @@ export default function ProjectsPage() {
               : "bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white border border-white/10"
           }`}
         >
-          ALL PROJECTS ({projects.length})
+          ALL PROJECTS
         </button>
         <button
           onClick={() => setFilter("featured")}
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
               : "bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white border border-white/10"
           }`}
         >
-          FEATURED ({projects.filter((p) => p.featured).length})
+          FEATURED
         </button>
       </div>
 
