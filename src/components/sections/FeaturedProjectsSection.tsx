@@ -54,7 +54,7 @@ const FeaturedProjects = () => {
                       <img
                         src={project.FeaturedCover}
                         alt={project.title}
-                        className="w-full h-full object-fill"
+                        className="w-full h-full object-contain"
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center relative overflow-hidden">

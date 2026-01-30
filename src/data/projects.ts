@@ -68,9 +68,35 @@ export const projects: Project[] = [
   {
     id: "pump-fourchette",
     title: "Pump Fourchette",
-    description: "",
-    tags: [],
-    link: "https://pump-fourchette.vercel.app/",
+    description:
+      "Pump Fourchette eliminates the stress of holiday meal preparation by providing expertly crafted, fresh dishes for celebrations and events, delivering premium quality and convenience that lets families focus on creating joyful, memorable moments together.",
+    tags: [
+      "Web App",
+      "E-commerce",
+      "Food Delivery",
+      "Catering",
+      "Festive Meals",
+    ],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    challenges:
+      "Creating an intuitive online platform for ordering diverse festive meals and ensuring reliable delivery coordination for special events.",
+    solution:
+      "Built a responsive web application with an integrated ordering system, enabling easy access to premium, fresh-prepared meals that enhance celebrations.",
+    year: "2025",
+    role: "Fullstack Developer",
+    gallery: [
+      "/Project/PumpFourchette/Screenshot 2026-01-30 094121.png",
+      "/Project/PumpFourchette/Screenshot 2026-01-30 094136.png",
+      "/Project/PumpFourchette/Screenshot 2026-01-30 094200.png",
+      "/Project/PumpFourchette/Screenshot 2026-01-30 094226.png",
+      "/Project/PumpFourchette/Screenshot 2026-01-30 094345.png",
+      "/Project/PumpFourchette/Screenshot 2026-01-30 094412.png",
+      "/Project/PumpFourchette/Screenshot 2026-01-30 094450.png",
+      "/Project/PumpFourchette/Screenshot 2026-01-30 094512.png",
+      "/Project/PumpFourchette/Screenshot 2026-01-30 094546.png",
+      "/Project/PumpFourchette/Screenshot 2026-01-30 094611.png",
+    ],
+    FeaturedCover: "/Project/PumpFourchette/Logo.png",
     featured: true,
   },
   {
@@ -80,6 +106,8 @@ export const projects: Project[] = [
     tags: [],
     link: "https://bless-fourchette.vercel.app/",
     featured: false,
+    year: "2025",
+    role: "Fullstack Developer",
   },
   {
     id: "orionconseil",
@@ -88,6 +116,8 @@ export const projects: Project[] = [
     tags: [],
     link: "https://www.orionconseil.com/",
     featured: false,
+    year: "2025",
+    role: "Fullstack Developer",
   },
   {
     id: "monimpression",
@@ -96,6 +126,8 @@ export const projects: Project[] = [
     tags: [],
     link: "https://www.monimpression.ca/",
     featured: false,
+    year: "2025",
+    role: "Fullstack Developer",
   },
   {
     id: "confort-plus-65",
@@ -104,14 +136,32 @@ export const projects: Project[] = [
     tags: [],
     link: "https://confort-plus-65.vercel.app/",
     featured: false,
+    year: "2025",
+    role: "Fullstack Developer",
   },
   {
     id: "tct",
     title: "TCT",
-    description: "",
-    tags: [],
+    description:
+      "TCT Pro transforms the automotive experience in Montreal by providing an integrated one-stop solution for used car sales, expert maintenance, professional detailing, vehicle customization, and personalized consultations, enabling customers to manage all vehicle needs efficiently and with confidence.",
+    tags: ["Web App", "Automotive", "E-commerce", "Vehicle Sales", "Services"],
+    challenges:
+      "Creating a comprehensive online platform that integrates vehicle sales, service listings, and customer resources for a seamless one-stop automotive experience.",
+    solution:
+      "Developed an intuitive website showcasing vehicle inventory, detailed services, and easy contact options, providing customers with a complete automotive hub that simplifies access to all their vehicle needs.",
     link: "https://www.tct.pro/",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     featured: true,
+    year: "2025",
+    role: "Fullstack Developer",
+    gallery: [
+      "/Project/TctPro/Screenshot 2026-01-30 100339.png",
+      "/Project/TctPro/Screenshot 2026-01-30 100356.png",
+      "/Project/TctPro/Screenshot 2026-01-30 100409.png",
+      "/Project/TctPro/Screenshot 2026-01-30 100423.png",
+      "/Project/TctPro/Screenshot 2026-01-30 100505.png",
+    ],
+    FeaturedCover: "/Project/TctPro/Logo.png",
   },
   {
     id: "milleniumautos",
@@ -120,6 +170,8 @@ export const projects: Project[] = [
     tags: [],
     link: "https://www.milleniumautos.ca/",
     featured: false,
+    year: "2025",
+    role: "Fullstack Developer",
   },
   {
     id: "mb-group-canada",
@@ -128,6 +180,8 @@ export const projects: Project[] = [
     tags: [],
     link: "https://mb-group-canada.vercel.app/",
     featured: false,
+    year: "2025",
+    role: "Fullstack Developer",
   },
   {
     id: "progix",
@@ -136,6 +190,8 @@ export const projects: Project[] = [
     tags: [],
     link: "https://www.progix.pro/",
     featured: false,
+    year: "2025",
+    role: "Fullstack Developer",
   },
   {
     id: "conseilcm360",
@@ -144,14 +200,32 @@ export const projects: Project[] = [
     tags: [],
     link: "https://www.conseilcm360.com/",
     featured: false,
+    year: "2025",
+    role: "Fullstack Developer",
   },
   {
     id: "humanicia",
     title: "Humanicia",
-    description: "",
-    tags: [],
+    description:
+      "Humanicia combats loneliness by offering genuine human companionship through personalized phone calls, video chats, and in-person activities, providing authentic connections that bring warmth and meaning to everyday moments.",
+    tags: ["Web App", "Companionship", "Wellness", "Social Services", "E-commerce"],
+    challenges:
+      "Developing a platform that facilitates authentic human connections while ensuring user safety, agent quality, and seamless booking for various interaction types.",
+    solution:
+      "Built an intuitive web platform with agent profiles, flexible subscription plans, and secure booking systems, enabling users to easily access meaningful companionship and combat loneliness effectively.",
+    technologies: ["Next.js", "MongoDB", "JWT", "Stripe", "TypeScript", "Tailwind CSS", "Vercel"],
     link: "https://www.humanicia.com/",
     featured: true,
+    year: "2025",
+    role: "Fullstack Developer",
+    gallery: [
+      "/Project/Humanicia/Screenshot 2026-01-30 101648.png",
+      "/Project/Humanicia/Screenshot 2026-01-30 101713.png",
+      "/Project/Humanicia/Screenshot 2026-01-30 101725.png",
+      "/Project/Humanicia/Screenshot 2026-01-30 101744.png",
+      "/Project/Humanicia/Screenshot 2026-01-30 101821.png",
+    ],
+    FeaturedCover: "/Project/Humanicia/Logo.png",
   },
   {
     id: "enseignesmediaprint",
@@ -160,6 +234,8 @@ export const projects: Project[] = [
     tags: [],
     link: "https://www.enseignesmediaprint.com/",
     featured: false,
+    year: "2025",
+    role: "Fullstack Developer",
   },
   {
     id: "ags-globalfarm-sarl",
@@ -168,6 +244,8 @@ export const projects: Project[] = [
     tags: [],
     link: "https://ags-globalfarm-sarl.vercel.app/",
     featured: false,
+    year: "2025",
+    role: "Fullstack Developer",
   },
   {
     id: "cheminement",
@@ -176,6 +254,8 @@ export const projects: Project[] = [
     tags: [],
     link: "https://cheminement.vercel.app/",
     featured: false,
+    year: "2025",
+    role: "Fullstack Developer",
   },
   {
     id: "safyr-nine",
@@ -204,8 +284,8 @@ export const projects: Project[] = [
       "Implementing real-time features while maintaining performance and ensuring data security across multiple user sessions.",
     solution:
       "Utilized WebSockets for real-time communication, implemented JWT for secure authentication, and optimized database queries with proper indexing.",
-    year: "2024",
-    role: "Lead Developer",
+    year: "2025",
+    role: "Fullstack Developer",
     gallery: [
       "/About/IDontKnow.png",
       "/About/MyselfHackathon.png",
