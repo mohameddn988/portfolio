@@ -98,7 +98,7 @@ export default function Contact() {
                 @mohamed._dn
               </h4>
               <p className="text-white/60 text-sm">
-                Its private but i can make and exception for you 😉
+                Its private but i can make an exception for you 😉
               </p>
             </div>
           </Link>

@@ -102,42 +102,105 @@ export const projects: Project[] = [
   {
     id: "bless-fourchette",
     title: "Bless Fourchette",
-    description: "",
-    tags: [],
+    description:
+      "Bless Fourchette delivers nourishing, vegan Canado-Haitian meals for schools and families, combining traditional flavors with community values, while supporting sickle cell anemia research through charitable contributions.",
+    tags: [
+      "Web App",
+      "E-commerce",
+      "Food Delivery",
+      "Vegan Meals",
+      "Community Service",
+    ],
+    challenges:
+      "Designing a distinct visual identity and user experience for a meal service platform similar to previous work for the same client, ensuring differentiation while maintaining brand consistency and incorporating faith-based community values.",
+    solution:
+      "Crafted a unique design system inspired by cultural heritage and charitable mission, featuring warm, community-focused visuals and intuitive ordering flows that set the platform apart while delivering seamless functionality for meal planning and charitable contributions.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     link: "https://bless-fourchette.vercel.app/",
     featured: false,
     year: "2025",
     role: "Fullstack Developer",
+    gallery: [
+      "/Project/BlessFourchette/Screenshot 2026-01-30 102823.png",
+      "/Project/BlessFourchette/Screenshot 2026-01-30 102839.png",
+      "/Project/BlessFourchette/Screenshot 2026-01-30 102850.png",
+      "/Project/BlessFourchette/Screenshot 2026-01-30 102858.png",
+    ],
+    FeaturedCover: "/Project/BlessFourchette/Logo.png",
   },
   {
     id: "orionconseil",
     title: "Orion Conseil",
     description: "",
-    tags: [],
     link: "https://www.orionconseil.com/",
     featured: false,
     year: "2025",
     role: "Fullstack Developer",
+    description:
+      "Developed a professional website for Orion Conseil, a consulting firm specializing in business strategy, accounting, and research services. The design was mostly driven by the client, and I didn't have much to say in it. The site showcases their expertise in strategic consulting, financial compliance, and data-driven insights, featuring a modern design that reflects their commitment to excellence, ethics, and innovation.",
+    tags: ["Web App", "Consulting", "Business Services"],
+    challenges:
+      "The most challenging thing I faced was to meet the client's idea and deliver its expectations.",
+    solution:
+      "Successfully implemented the client's design vision by building a responsive Next.js application with clean navigation, detailed service sections, client testimonials, and integrated contact forms, ensuring the final product aligned perfectly with their expectations and provided an engaging user experience.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+      "Cloudinary",
+      "MongoDB",
+      "JWT",
+    ],
+    FeaturedCover: "/Project/OrionConseil/Logo.png",
+    gallery: [
+      "/Project/OrionConseil/Screenshot 2026-01-30 103425.png",
+      "/Project/OrionConseil/Screenshot 2026-01-30 103656.png",
+      "/Project/OrionConseil/Screenshot 2026-01-30 103712.png",
+    ],
   },
   {
     id: "monimpression",
     title: "Mon Impression",
-    description: "",
-    tags: [],
+    description:
+      "A custom clothing shop specializing in personalized t-shirts, hoodies, and accessories. The platform features an online customization studio with real-time previews, guided quotes, and fast delivery across Quebec, enabling customers to create unique, high-quality garments that reflect their personal style or brand.",
+    tags: ["Web App", "E-commerce", "Custom Clothing", "Online Customization"],
     link: "https://www.monimpression.ca/",
     featured: false,
     year: "2025",
     role: "Fullstack Developer",
+    challenges:
+      "Implementing a user-friendly online customization tool with real-time previews and ensuring seamless integration with production processes for custom orders.",
+    solution:
+      "Built a responsive Next.js application with an intuitive customization interface, secure payment processing via Stripe, and efficient order management to deliver personalized products quickly and reliably.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Vercel"],
+    FeaturedCover: "/Project/MonImpression/LogoWhite.png",
+    gallery: [
+      "/Project/MonImpression/Screenshot 2026-01-30 104444.png",
+      "/Project/MonImpression/Screenshot 2026-01-30 104507.png",
+      "/Project/MonImpression/Screenshot 2026-01-30 104601.png",
+    ],
   },
   {
     id: "confort-plus-65",
     title: "Confort Plus 65",
-    description: "",
-    tags: [],
+    description:
+      "This was my first professional website for Confort Plus 65, a dedicated home care service provider for seniors aged 65 and older. This project marked my entry into web development, creating an informative online platform that highlights their personalized care services, including daily activities assistance, domestic help, and support for cognitive difficulties, enabling families to access compassionate senior care information.",
+    tags: ["Web App", "Home Care", "Seniors Services", "First Project"],
     link: "https://confort-plus-65.vercel.app/",
     featured: false,
     year: "2025",
     role: "Fullstack Developer",
+    challenges:
+      "As my inaugural fullstack web development project, the primary challenges involved learning to build with Next.js, integrating a database for data management, and implementing JWT authentication for secure user access, while adhering to the client's design vision and ensuring the site effectively communicated Confort Plus 65's mission.",
+    solution:
+      "Successfully built a responsive Next.js application with database integration and JWT authentication, delivering a functional online platform that allows Confort Plus 65 to manage services and connect with families securely.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "MongoDB", "JWT", "Vercel"],
+    FeaturedCover: "/Project/ConfortPlus65/Logo.png",
+    gallery: [
+      "/Project/ConfortPlus65/Screenshot 2026-01-30 110707.png",
+      "/Project/ConfortPlus65/Screenshot 2026-01-30 110720.png",
+    ],
   },
   {
     id: "tct",
@@ -208,12 +271,26 @@ export const projects: Project[] = [
     title: "Humanicia",
     description:
       "Humanicia combats loneliness by offering genuine human companionship through personalized phone calls, video chats, and in-person activities, providing authentic connections that bring warmth and meaning to everyday moments.",
-    tags: ["Web App", "Companionship", "Wellness", "Social Services", "E-commerce"],
+    tags: [
+      "Web App",
+      "Companionship",
+      "Wellness",
+      "Social Services",
+      "E-commerce",
+    ],
     challenges:
       "Developing a platform that facilitates authentic human connections while ensuring user safety, agent quality, and seamless booking for various interaction types.",
     solution:
       "Built an intuitive web platform with agent profiles, flexible subscription plans, and secure booking systems, enabling users to easily access meaningful companionship and combat loneliness effectively.",
-    technologies: ["Next.js", "MongoDB", "JWT", "Stripe", "TypeScript", "Tailwind CSS", "Vercel"],
+    technologies: [
+      "Next.js",
+      "MongoDB",
+      "JWT",
+      "Stripe",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+    ],
     link: "https://www.humanicia.com/",
     featured: true,
     year: "2025",
