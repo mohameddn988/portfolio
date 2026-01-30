@@ -11,7 +11,7 @@ export default function Header() {
   const { t, language, setLanguage } = useI18n();
 
   const handleLanguageSwitch = () => {
-    const nextLang: SupportedLanguage = language === 'fr' ? 'en' : 'fr';
+    const nextLang: SupportedLanguage = language === "fr" ? "en" : "fr";
     setLanguage(nextLang);
   };
 

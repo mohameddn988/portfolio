@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://your-domain.com"), // Replace with your actual domain
   title: "Deneche Mohamed | Full-Stack & Mobile Developer Portfolio",
   description:
     "Explore the portfolio of Deneche Mohamed, a passionate full-stack and mobile developer specializing in modern web technologies, mobile apps, innovative projects, and creative solutions.",

@@ -10,18 +10,16 @@ interface LoadingWrapperProps {
 export default function LoadingWrapper({ children }: LoadingWrapperProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [typedText, setTypedText] = useState("");
-  const [reduceMotion, setReduceMotion] = useState(false);
 
   const fullText = "Welcome to My Portfolio";
 
   useEffect(() => {
     // Check for reduced motion preference
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setReduceMotion(media.matches);
 
     // Show loading for initial animation
     const runTyping = async () => {
-      if (reduceMotion) {
+      if (media.matches) {
         setTypedText(fullText);
         setTimeout(() => setIsLoading(false), 2000);
         return;
@@ -37,7 +35,7 @@ export default function LoadingWrapper({ children }: LoadingWrapperProps) {
     };
 
     runTyping();
-  }, [reduceMotion, fullText]);
+  }, [fullText]);
 
   if (isLoading) {
     return (

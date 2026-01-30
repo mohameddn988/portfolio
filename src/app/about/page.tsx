@@ -6,7 +6,7 @@ import Image from "next/image";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { technicalSkills } from "@/data/skills";
 import { achievements } from "@/data/achievements";
-import { useI18n } from '@/i18n/useI18n';
+import { useI18n } from "@/i18n/useI18n";
 
 const IconCloud = dynamic(() => import("@/components/ui/icon-cloud"), {
   ssr: false,

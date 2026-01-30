@@ -5,7 +5,7 @@ import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
 
 interface IconData {
   simpleIcons: Record<string, unknown>;
-  allIcon: Record<string, { title: string; hex: string; slug: string; }>;
+  allIcon: Record<string, { title: string; hex: string; slug: string }>;
 }
 
 export const cloudProps = {
@@ -78,7 +78,7 @@ export default function IconCloud({
     if (!data) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "dark")
+      renderCustomIcon(icon, theme || "dark"),
     );
   }, [data, theme]);
 

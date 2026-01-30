@@ -5,7 +5,7 @@ import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { useI18n } from '@/i18n/useI18n';
+import { useI18n } from "@/i18n/useI18n";
 
 export default function ProjectDetailPage({
   params,

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface SectionTitleProps {
   title?: string;
@@ -7,11 +7,11 @@ interface SectionTitleProps {
   className?: string;
 }
 
-const SectionTitle: React.FC<SectionTitleProps> = ({ 
-  title, 
-  backgroundText, 
+const SectionTitle: React.FC<SectionTitleProps> = ({
+  title,
+  backgroundText,
   subtitle,
-  className = ""
+  className = "",
 }) => {
   return (
     <div
