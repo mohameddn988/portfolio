@@ -7,9 +7,28 @@ import { useI18n } from "@/i18n/useI18n";
 
 export default function HeroSection() {
   const [heroScale, setHeroScale] = useState(1);
-  const [skillOffsets, setSkillOffsets] = useState<
+  const [skillOffsets] = useState<
     Record<string, { x: number; y: number; duration: number; delay: number }>
-  >({});
+  >(() => {
+    const xOffsets = [10, -8, 12, -10, 9, -7, 11, -9];
+    const yOffsets = [-7, 9, -10, 8, -9, 11, -6, 10];
+    const durations = [3.2, 2.8, 3.0];
+    const delays = [0, 0.2, 0.1];
+
+    const initialOffsets: Record<
+      string,
+      { x: number; y: number; duration: number; delay: number }
+    > = {};
+    skills.forEach((skill, index) => {
+      initialOffsets[skill.label] = {
+        x: xOffsets[index % xOffsets.length],
+        y: yOffsets[index % yOffsets.length],
+        duration: durations[index % durations.length],
+        delay: delays[index % delays.length],
+      };
+    });
+    return initialOffsets;
+  });
   const [typedLines, setTypedLines] = useState<string[]>([]);
   const [reduceMotion, setReduceMotion] = useState(false);
   const { t } = useI18n();
@@ -34,30 +53,6 @@ export default function HeroSection() {
     updatePreference();
     media.addEventListener("change", updatePreference);
     return () => media.removeEventListener("change", updatePreference);
-  }, []);
-
-  useEffect(() => {
-    // Initialize gentle floating offsets per skill (fixed values)
-    const xOffsets = [10, -8, 12, -10, 9, -7, 11, -9];
-    const yOffsets = [-7, 9, -10, 8, -9, 11, -6, 10];
-    const durations = [3.2, 2.8, 3.0];
-    const delays = [0, 0.2, 0.1];
-
-    const initialOffsets: Record<
-      string,
-      { x: number; y: number; duration: number; delay: number }
-    > = {};
-
-    skills.forEach((skill, index) => {
-      initialOffsets[skill.label] = {
-        x: xOffsets[index % xOffsets.length],
-        y: yOffsets[index % yOffsets.length],
-        duration: durations[index % durations.length],
-        delay: delays[index % delays.length],
-      };
-    });
-
-    setSkillOffsets(initialOffsets);
   }, []);
 
   useEffect(() => {

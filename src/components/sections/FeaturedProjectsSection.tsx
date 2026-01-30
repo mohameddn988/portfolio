@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { projects } from "@/data/projects";
 import Link from "next/link";
@@ -27,9 +28,11 @@ const FeaturedProjects = () => {
               className="block group relative bg-linear-to-br from-[#1a1a1d] to-[#0f0f11] rounded-4xl p-5 md:p-6 border border-white/8 overflow-visible cursor-pointer transition-colors hover:border-secondary/20"
             >
               {/* Background Number */}
-              <img
+              <Image
                 src={`/Project/Number${["One", "Two", "Three", "Four"][index % 4]}.svg`}
                 alt={t("featuredProjects.projectLabel") + ` ${index + 1}`}
+                width={160}
+                height={160}
                 className="absolute top-0 right-0 w-32 md:w-36 lg:w-40 h-auto z-0 select-none pointer-events-none transform -translate-y-1/2 translate-x-14"
               />
 
