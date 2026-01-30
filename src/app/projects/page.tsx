@@ -62,13 +62,13 @@ export default function ProjectsPage() {
               )}
 
               {/* Project Image */}
-              <div className="relative w-full aspect-video rounded-xl overflow-hidden mb-5 shadow-lg">
-                {project.image ? (
+              <div className="relative w-full aspect-16/8 rounded-xl overflow-hidden mb-5 shadow-lg">
+                {project.gallery && project.gallery[0] ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
-                    src={project.image}
+                    src={project.gallery[0]}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-fill"
                   />
                 ) : (
                   <div className="w-full h-full bg-linear-to-br from-[#7c3aed] via-[#8b5cf6] to-[#6366f1] flex items-center justify-center relative overflow-hidden">

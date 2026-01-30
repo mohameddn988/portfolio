@@ -5,8 +5,6 @@ export interface Project {
   tags: string[];
   link?: string;
   github?: string;
-  image?: string;
-  detailedDescription?: string;
   features?: string[];
   technologies?: string[];
   challenges?: string;
@@ -14,6 +12,7 @@ export interface Project {
   year?: string;
   role?: string;
   gallery?: string[];
+  FeaturedCover?: string;
   featured?: boolean;
 }
 
@@ -21,18 +20,50 @@ export const projects: Project[] = [
   {
     id: "queendeq",
     title: "Queen De Q",
-    description: "",
-    tags: [],
+    description:
+      "A transformative journey of self-discovery that empowers women to embrace their inner sovereignty and navigate relationships with wisdom and grace. Queen De Q features an AI-powered chatbot and three core experiences: self-discovery through inner Queen archetypes, insights into male archetypes in relationships, and emotional support rituals. It creates a safe space where women can explore their authentic selves, heal emotional patterns, and build meaningful connections through playful yet profound self-reflection tools.",
+    tags: [
+      "Web App",
+      "AI Chatbot",
+      "Personal Development",
+      "Feminist Tech",
+      "Wellness App",
+      "Self-Care",
+    ],
     link: "https://www.queendeq.com/",
+    technologies: [
+      "Express",
+      "React",
+      "Vite",
+      "Node.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Stripe",
+      "Auth0",
+      "MongoDB",
+      "JWT",
+      "OpenAI",
+      "Mongoose",
+      "Framer Motion",
+    ],
+    challenges:
+      "Delivering a stunning and attractive user experience to effectively attract users to the main platform through the landing page, and customizing the AI chatbot to provide tailored interactions for each of the three core experiences: self-discovery, relationship insights, and emotional support.",
+    solution:
+      "Designed an engaging landing page with compelling visuals, clear value proposition highlighting feminist personal development tools, and interactive elements that guide users towards the app, resulting in high user attraction and seamless conversion to the platform.",
+    year: "2025",
+    role: "Fullstack Developer",
+    gallery: [
+      "/Project/QueenDeQ/Screenshot 2026-01-30 013433.png",
+      "/Project/QueenDeQ/Screenshot 2026-01-30 013456.png",
+      "/Project/QueenDeQ/Screenshot 2026-01-30 013633.png",
+      "/Project/QueenDeQ/Screenshot 2026-01-30 013652.png",
+      "/Project/QueenDeQ/Screenshot 2026-01-30 013711.png",
+      "/Project/QueenDeQ/Screenshot 2026-01-30 013814.png",
+      "/Project/QueenDeQ/Screenshot 2026-01-30 013836.png",
+      "/Project/QueenDeQ/Screenshot 2026-01-30 092756.png",
+    ],
+    FeaturedCover: "/Project/QueenDeQ/logo-gold.png",
     featured: true,
-  },
-  {
-    id: "queen-de-q-platform-v2",
-    title: "Queen De Q Platform V2",
-    description: "",
-    tags: [],
-    link: "https://queen-de-q-platform-v2.vercel.app/",
-    featured: false,
   },
   {
     id: "pump-fourchette",
@@ -149,9 +180,39 @@ export const projects: Project[] = [
   {
     id: "safyr-nine",
     title: "Safyr Nine",
-    description: "",
-    tags: [],
+    description:
+      "A modern web application for managing safyr nine services with advanced features and user-friendly interface.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
     link: "https://safyr-nine.vercel.app/",
+    github: "https://github.com/username/safyr-nine",
+    features: [
+      "User authentication and authorization",
+      "Real-time data updates",
+      "Interactive dashboards",
+      "Mobile-responsive design",
+      "API integration",
+    ],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "PostgreSQL",
+      "Vercel",
+    ],
+    challenges:
+      "Implementing real-time features while maintaining performance and ensuring data security across multiple user sessions.",
+    solution:
+      "Utilized WebSockets for real-time communication, implemented JWT for secure authentication, and optimized database queries with proper indexing.",
+    year: "2024",
+    role: "Lead Developer",
+    gallery: [
+      "/About/IDontKnow.png",
+      "/About/MyselfHackathon.png",
+      "/About/Myself.png",
+      "/About/IDontKnow.png",
+      "/About/MyselfHackathon.png",
+    ],
     featured: false,
   },
 ];

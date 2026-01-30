@@ -20,7 +20,7 @@ export default function ProjectDetailPage({
 
   // State for the main image
   const [mainImage, setMainImage] = useState(
-    project.image || (project.gallery && project.gallery[0]) || "",
+    (project.gallery && project.gallery[0]) || "",
   );
 
   const handleGalleryImageClick = (imageSrc: string) => {
@@ -70,7 +70,7 @@ export default function ProjectDetailPage({
               {project.title}
             </h1>
 
-            <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed max-w-4xl">
+            <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed max-w-4xl text-justify">
               {project.description}
             </p>
 
@@ -128,12 +128,12 @@ export default function ProjectDetailPage({
       {mainImage && (
         <section className="px-4 md:px-8 mb-20">
           <div className="max-w-6xl mx-auto">
-            <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl cursor-pointer bg-primary">
+            <div className="relative w-full aspect-16/8 rounded-3xl overflow-hidden shadow-2xl cursor-pointer bg-primary">
               <Image
                 src={mainImage}
                 alt={project.title}
                 fill
-                className="object-cover"
+                className="object-fill"
               />
             </div>
           </div>
@@ -151,31 +151,19 @@ export default function ProjectDetailPage({
               {project.gallery.map((image, index) => (
                 <div
                   key={index}
-                  className="relative aspect-video rounded-xl overflow-hidden shadow-lg group cursor-pointer bg-primary"
+                  className="relative aspect-16/8 rounded-xl overflow-hidden shadow-lg group cursor-pointer bg-primary"
                   onClick={() => handleGalleryImageClick(image)}
                 >
                   <Image
                     src={image}
                     alt={`${project.title} - Image ${index + 1}`}
                     fill
-                    className="object-cover"
+                    className="object-fill"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-      )}
-      {project.detailedDescription && (
-        <section className="px-4 md:px-8 mb-20">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              About the Project
-            </h2>
-            <p className="text-lg text-zinc-400 leading-relaxed">
-              {project.detailedDescription}
-            </p>
           </div>
         </section>
       )}
