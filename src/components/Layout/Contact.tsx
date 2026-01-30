@@ -3,17 +3,18 @@
 import Link from 'next/link';
 import SectionTitle from '../ui/SectionTitle';
 import { ArrowDown } from 'lucide-react';
+import { useI18n } from "@/i18n/useI18n";
 
 export default function Contact() {
+  const { t } = useI18n();
+
   return (
     <section className="py-32 bg-primary">
       <div className="">
         {/* Main Heading */}
         <div className="mb-16 px-16 md:px-24 lg:px-32">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
-            Let&apos;s team up to turn your concepts
-            <br />
-            into outstanding digital experiences!
+            {t("contact.mainHeading")}
           </h2>
         </div>
 
@@ -24,25 +25,24 @@ export default function Contact() {
             target="_blank"
             className="px-8 py-4 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-colors text-lg font-medium"
           >
-            Message Me
+            {t("contact.messageMe")}
           </Link>
           <Link
             href="mailto:msideneche@gmail.com"
-            
             className="px-8 py-4 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-colors text-lg font-medium"
           >
-            Email Me
+            {t("contact.emailMe")}
           </Link>
         </div>
 
         {/* Get In Touch Section */}
         <SectionTitle
-          backgroundText="CONTACT"
-          title="dont be a stranger!"
+          backgroundText={t("contact.sectionTitle.backgroundText")}
+          title={t("contact.sectionTitle.title")}
           subtitle={
             <>
-              Let&apos;s be friends, hit me out on the social media through the
-              links below <ArrowDown className="inline w-4 h-4" />
+              {t("contact.sectionTitle.subtitle")}{" "}
+              <ArrowDown className="inline w-4 h-4" />
             </>
           }
         />
@@ -68,10 +68,10 @@ export default function Contact() {
             </div>
             <div>
               <h4 className="text-[#e4e4e7] font-semibold text-lg mb-1 tracking-wider capitalize">
-                Mohamed Deneche
+                {t("contact.social.linkedin.name")}
               </h4>
               <p className="text-white/60 text-sm">
-                Check out my resume and let&apos;s connect
+                {t("contact.social.linkedin.description")}
               </p>
             </div>
           </Link>
@@ -95,10 +95,10 @@ export default function Contact() {
             </div>
             <div>
               <h4 className="text-[#e4e4e7] font-semibold text-lg mb-1 tracking-wider capitalize">
-                @mohamed._dn
+                {t("contact.social.instagram.name")}
               </h4>
               <p className="text-white/60 text-sm">
-                Its private but i can make an exception for you 😉
+                {t("contact.social.instagram.description")}
               </p>
             </div>
           </Link>
@@ -122,10 +122,10 @@ export default function Contact() {
             </div>
             <div>
               <h4 className="text-[#e4e4e7] font-semibold text-lg mb-1 tracking-wider capitalize">
-                mohameddn988
+                {t("contact.social.github.name")}
               </h4>
               <p className="text-white/60 text-sm">
-                Explore my projects and code repositories
+                {t("contact.social.github.description")}
               </p>
             </div>
           </Link>

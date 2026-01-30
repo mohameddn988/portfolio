@@ -1,11 +1,19 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useI18n } from "@/i18n/useI18n";
+import { SupportedLanguage } from "@/i18n/I18nContext";
 
 export default function Header() {
   const pathname = usePathname();
+  const { t, language, setLanguage } = useI18n();
+
+  const handleLanguageSwitch = () => {
+    const nextLang: SupportedLanguage = language === 'fr' ? 'en' : 'fr';
+    setLanguage(nextLang);
+  };
 
   return (
     <header className="sticky top-0 left-0 right-0 z-50 bg-transparent">
@@ -18,53 +26,54 @@ export default function Header() {
           >
             <Image
               src="/Logo.png"
-              alt="Logo"
+              alt={t("header.logoAlt")}
               width={1148}
               height={1148}
               className="w-auto h-15"
               priority
             />
-</Link>
+          </Link>
 
           {/* Navigation */}
           <nav className="flex items-center gap-20 backdrop-blur-md px-14 py-5 rounded-full">
             <Link
               href="/"
-              className={`transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
+              className={`w-28 text-center transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
                 pathname === "/"
                   ? "text-secondary"
                   : "text-white/90 hover:text-secondary"
               }`}
             >
-              HOME
+              {t("nav.home")}
             </Link>
             <Link
               href="/projects"
-              className={`transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
+              className={`w-28 text-center transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
                 pathname === "/projects" || pathname?.startsWith("/projects/")
                   ? "text-secondary"
                   : "text-white/90 hover:text-secondary"
               }`}
             >
-              PROJECTS
+              {t("nav.projects")}
             </Link>
             <Link
               href="/about"
-              className={`transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
+              className={`w-28 text-center transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
                 pathname === "/about"
                   ? "text-secondary"
                   : "text-white/90 hover:text-secondary"
               }`}
             >
-              ABOUT
+              {t("nav.about")}
             </Link>
           </nav>
 
           {/* Right side icons */}
           <div className="flex items-center gap-8 backdrop-blur-md px-8 py-4 rounded-full">
             <button
+              onClick={handleLanguageSwitch}
               className="text-white/80 hover:text-secondary transition-colors"
-              aria-label="Toggle theme"
+              aria-label={t("header.switchLanguageAria")}
             >
               <svg
                 width="30"
@@ -95,7 +104,7 @@ export default function Header() {
             <Link
               href="mailto:msideneche@gmail.com"
               className="text-white/80 hover:text-secondary transition-colors"
-              aria-label="Email"
+              aria-label={t("header.emailAria")}
             >
               <svg
                 width="40"
@@ -123,7 +132,7 @@ export default function Header() {
                   strokeLinejoin="round"
                 />
               </svg>
-              </Link>
+            </Link>
           </div>
         </div>
       </div>

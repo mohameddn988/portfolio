@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from "@/components/Layout/Header";
 import CustomCursor from "@/components/ui/CustomCursor";
 import Contact from "@/components/Layout/Contact";
+import { I18nProvider } from "@/i18n/I18nProvider";
+import en from "@/messages/en.json";
+import fr from "@/messages/fr.json";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,10 +33,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary text-secondary`}
       >
-        <CustomCursor />
-        <Header />
-        {children}
-        <Contact />
+        <I18nProvider initialLanguage="en" messages={{ en, fr }}>
+          <CustomCursor />
+          <Header />
+          {children}
+          <Contact />
+        </I18nProvider>
       </body>
     </html>
   );

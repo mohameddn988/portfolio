@@ -1,0 +1,241 @@
+{
+  "nav": {
+    "home": "ACCUEIL",
+    "projects": "PROJETS",
+    "about": "À PROPOS"
+  },
+  "header": {
+    "logoAlt": "Logo",
+    "switchLanguageAria": "Changer de langue",
+    "emailAria": "Email"
+  },
+  "hero": {
+    "name": "DENECHE MOHAMED",
+    "line1": "CONCEPTION",
+    "line2": "SIMPLICITÉ",
+    "line3": "AVEC",
+    "line4": "BUT",
+    "portraitAlt": "Portrait",
+    "logoAlt": "Logo"
+  },
+  "intro": {
+    "greeting": "Salut étranger!",
+    "description": "Je suis passionné par la conception et la création de produits web et mobiles évolutifs, combinant une ingénierie solide avec une approche de conception moderne centrée sur l'utilisateur"
+  },
+  "workExperience": {
+    "title": "EXPÉRIENCE",
+    "viewResume": "Voir le CV",
+    "progix": {
+      "company": "Progix",
+      "role": "Développeur Full Stack",
+      "period": "Juillet 2025 - Janvier 2026"
+    },
+    "freelancer": {
+      "company": "Freelance",
+      "role": "Développeur Full Stack",
+      "period": "Juin 2024 - Juin 2025"
+    }
+  },
+  "featuredProjects": {
+    "title": "Projets en Vedette",
+    "subtitle": "Ouais, je travaille dur",
+    "backgroundText": "EN VEDETTE",
+    "viewDetails": "VOIR LES DÉTAILS",
+    "projectLabel": "Projet"
+  },
+  "about": {
+    "title": "Fais Ma Connaissance!",
+    "subtitle": "Laisse-moi me présenter brièvement",
+    "greeting": "Salut, je suis",
+    "name": "Deneche Mohamed",
+    "role": "Développeur Full Stack & Mobile",
+    "bio1": "Je suis un développeur fullstack et mobile passionné par la création de solutions élégantes à des problèmes complexes. Avec une expertise dans les technologies frontend et backend, je construis des applications transparentes et évolutives qui ont un réel impact.",
+    "bio2": "Animé par la curiosité et l'apprentissage continu, je me spécialise dans l'architecture d'APIs, l'optimisation de bases de données et le développement d'applications mobiles multiplateformes. Je valorise le code propre, la collaboration et la pensée innovante dans la création de solutions numériques significatives.",
+    "bio3": "En dehors du codage, je reste à jour avec les technologies émergentes, contribue à des projets open-source et mentorise les développeurs en herbe, visant toujours à livrer des produits conviviaux et de haute qualité.",
+    "stats": {
+      "projects": "Projets",
+      "experience": "Mois Exp",
+      "contributions": "Contributions"
+    },
+    "achievementsTitle": "RÉALISATIONS ET ÉTAPES"
+  },
+  "projects": {
+    "title": "Plus de Projets",
+    "subtitle": "Une vitrine de mon travail",
+    "filterAll": "PROJETS",
+    "filterFeatured": "EN VEDETTE",
+    "viewDetails": "VOIR LES DÉTAILS",
+    "noProjectsFound": "Aucun projet trouvé",
+    "backgroundText": "PROJETS"
+  },
+  "projectDetail": {
+    "backToProjects": "Retour aux projets",
+    "featured": "EN VEDETTE",
+    "year": "Année",
+    "role": "Rôle",
+    "visitLiveSite": "Visiter le site en direct",
+    "viewSourceCode": "Voir le code source",
+    "projectGallery": "Galerie de projet",
+    "keyFeatures": "Fonctionnalités clés",
+    "technologiesUsed": "Technologies utilisées",
+    "challenges": "Défis",
+    "solution": "Solution",
+    "imageLabel": "Image"
+  },
+  "tags": {
+    "webApp": "Application Web",
+    "aiChatbot": "Chatbot IA",
+    "personalDevelopment": "Développement Personnel",
+    "feministTech": "Technologie Féministe",
+    "wellnessApp": "Application Bien-être",
+    "selfCare": "Soin de Soi",
+    "ecommerce": "E-commerce",
+    "foodDelivery": "Livraison de Nourriture",
+    "catering": "Traiteur",
+    "festiveMeals": "Repas de Fête",
+    "veganMeals": "Repas Végétaliens",
+    "communityService": "Service Communautaire",
+    "consulting": "Conseil",
+    "businessServices": "Services d'Affaires",
+    "customClothing": "Vêtements Personnalisés",
+    "onlineCustomization": "Personnalisation en Ligne",
+    "homeCare": "Soins à Domicile",
+    "seniorsServices": "Services pour Aînés",
+    "firstProject": "Premier Projet",
+    "automotive": "Automobile",
+    "vehicleSales": "Vente de Véhicules",
+    "services": "Services",
+    "realEstate": "Immobilier",
+    "construction": "Construction",
+    "agency": "Agence",
+    "softwareDevelopment": "Développement Logiciel",
+    "treasuryManagement": "Gestion de Trésorerie",
+    "companionship": "Compagnie",
+    "wellness": "Bien-être",
+    "socialServices": "Services Sociaux",
+    "mentalHealth": "Santé Mentale",
+    "healthcare": "Soins de Santé",
+    "platform": "Plateforme"
+  },
+  "roles": {
+    "fullstackDeveloper": "Développeur Full Stack"
+  },
+  "skills": {
+    "title": "Nuage de Compétences Techniques",
+    "subtitle": "Technologies avec lesquelles je travaille"
+  },
+  "projectDetails": {
+    "queendeq": {
+      "title": "Queen De Q",
+      "description": "Un voyage transformateur de découverte de soi qui permet aux femmes d'embrasser leur souveraineté intérieure et de naviguer dans les relations avec sagesse et grâce. Queen De Q propose un chatbot alimenté par IA et trois expériences principales : la découverte de soi à travers les archétypes de Reine intérieure, les insights sur les archétypes masculins dans les relations, et les rituels de soutien émotionnel. Il crée un espace sûr où les femmes peuvent explorer leur véritable moi, guérir les schémas émotionnels, et construire des connexions significatives grâce à des outils de réflexion personnelle ludiques mais profonds.",
+      "challenges": "Fournir une expérience utilisateur époustouflante et attrayante pour attirer efficacement les utilisateurs vers la plateforme principale grâce à la page d'accueil, et personnaliser le chatbot IA pour offrir des interactions sur mesure pour chacune des trois expériences principales : découverte de soi, insights relationnels, et soutien émotionnel.",
+      "solution": "Conçu une page d'accueil engageante avec des visuels accrocheurs, une proposition de valeur claire mettant en avant les outils de développement personnel féministe, et des éléments interactifs qui guident les utilisateurs vers l'application, entraînant une forte attraction des utilisateurs et une conversion transparente vers la plateforme."
+    },
+    "pump-fourchette": {
+      "title": "Pump Fourchette",
+      "description": "Pump Fourchette élimine le stress de la préparation des repas de fête en fournissant des plats frais et expertement préparés pour les célébrations et événements, offrant une qualité premium et une commodité qui permet aux familles de se concentrer sur la création de moments joyeux et mémorables ensemble.",
+      "challenges": "Créer une plateforme en ligne intuitive pour commander des repas de fête diversifiés et assurer une coordination fiable de livraison pour les événements spéciaux.",
+      "solution": "Construit une application web responsive avec un système de commande intégré, permettant un accès facile à des repas frais et premium préparés qui améliorent les célébrations."
+    },
+    "bless-fourchette": {
+      "title": "Bless Fourchette",
+      "description": "Bless Fourchette livre des repas nourrissants, végétaliens canado-haïtiens pour les écoles et les familles, combinant des saveurs traditionnelles avec des valeurs communautaires, tout en soutenant la recherche sur l'anémie falciforme grâce à des contributions caritatives.",
+      "challenges": "Concevoir une identité visuelle distincte et une expérience utilisateur pour une plateforme de service de repas similaire à un travail précédent pour le même client, assurant la différenciation tout en maintenant la cohérence de la marque et en incorporant des valeurs communautaires basées sur la foi.",
+      "solution": "Créé un système de design unique inspiré de l'héritage culturel et de la mission caritative, présentant des visuels chaleureux centrés sur la communauté et des flux de commande intuitifs qui distinguent la plateforme tout en livrant une fonctionnalité transparente pour la planification des repas et les contributions caritatives."
+    },
+    "orionconseil": {
+      "title": "Orion Conseil",
+      "description": "Un cabinet de conseil spécialisé dans la stratégie d'affaires, la comptabilité et les services de recherche. Le design était principalement dirigé par le client, et je n'avais pas beaucoup à dire. Le site présente leur expertise en conseil stratégique, conformité financière et insights basés sur les données, avec un design moderne qui reflète leur engagement envers l'excellence, l'éthique et l'innovation.",
+      "challenges": "La chose la plus difficile à laquelle j'ai été confronté était de répondre à l'idée du client et de livrer ses attentes.",
+      "solution": "Implémenté avec succès la vision de design du client en construisant une application Next.js responsive avec une navigation propre, des sections de services détaillées, des témoignages clients et des formulaires de contact intégrés, assurant que le produit final s'alignait parfaitement avec leurs attentes et fournissait une expérience utilisateur engageante."
+    },
+    "monimpression": {
+      "title": "Mon Impression",
+      "description": "Une boutique de vêtements personnalisés spécialisée dans les t-shirts personnalisés, hoodies et accessoires. La plateforme propose un studio de personnalisation en ligne avec des aperçus en temps réel, des devis guidés et une livraison rapide à travers le Québec, permettant aux clients de créer des vêtements uniques et de haute qualité qui reflètent leur style personnel ou leur marque.",
+      "challenges": "Implémenter un outil de personnalisation en ligne convivial avec des aperçus en temps réel et assurer une intégration transparente avec les processus de production pour les commandes personnalisées.",
+      "solution": "Construit une application Next.js responsive avec une interface de personnalisation intuitive, un traitement de paiement sécurisé via Stripe, et une gestion efficace des commandes pour livrer des produits personnalisés rapidement et de manière fiable."
+    },
+    "confort-plus-65": {
+      "title": "Confort Plus 65",
+      "description": "C'était mon premier site web professionnel pour Confort Plus 65, un fournisseur de services de soins à domicile dédié aux personnes âgées de 65 ans et plus. Ce projet a marqué mon entrée dans le développement web, créant une plateforme en ligne informative qui met en avant leurs services de soins personnalisés, incluant l'assistance aux activités quotidiennes, l'aide domestique et le soutien pour les difficultés cognitives, permettant aux familles d'accéder à des informations sur les soins aux personnes âgées compatissants.",
+      "challenges": "En tant que projet inaugural de développement web fullstack, les défis principaux impliquaient d'apprendre à construire avec Next.js, d'intégrer une base de données pour la gestion des données, et d'implémenter l'authentification JWT pour un accès sécurisé, tout en adhérant à la vision du client et en assurant que le site communiquait efficacement la mission de Confort Plus 65.",
+      "solution": "Construit avec succès une application Next.js responsive avec intégration de base de données et authentification JWT, livrant une plateforme en ligne fonctionnelle qui permet à Confort Plus 65 de gérer les services et de se connecter avec les familles en toute sécurité."
+    },
+    "tct": {
+      "title": "TCT",
+      "description": "TCT Pro transforme l'expérience automobile à Montréal en fournissant une solution intégrée tout-en-un pour la vente de voitures d'occasion, l'entretien expert, le detailing professionnel, la personnalisation de véhicules et les consultations personnalisées, permettant aux clients de gérer tous leurs besoins automobiles efficacement et avec confiance.",
+      "challenges": "Créer une plateforme en ligne complète qui intègre la vente de véhicules, les listes de services et les ressources clients pour une expérience automobile tout-en-un transparente.",
+      "solution": "Développé un site web intuitif présentant l'inventaire de véhicules, les services détaillés et les options de contact faciles, fournissant aux clients un hub automobile complet qui simplifie l'accès à tous leurs besoins automobiles."
+    },
+    "milleniumautos": {
+      "title": "Millenium Autos",
+      "description": "Un service d'achat de véhicules basé au Québec qui simplifie le processus de vente de voitures d'occasion. La plateforme propose un formulaire facile à utiliser pour les soumissions de véhicules, une tarification transparente et un engagement envers des transactions sans tracas, permettant aux vendeurs d'obtenir des offres équitables rapidement et de se connecter avec un concessionnaire de confiance.",
+      "challenges": "Créer une plateforme en ligne intuitive qui guide les utilisateurs à travers le processus de vente de véhicules et construit la confiance grâce à une communication transparente et des propositions de valeur claires.",
+      "solution": "Construit un site web responsive avec un formulaire de contact convivial, des informations détaillées sur les services et un guide étape par étape de vente, fournissant à Millenium Autos une présence en ligne efficace pour attirer et convertir les vendeurs potentiels."
+    },
+    "mb-group-canada": {
+      "title": "MB Group Canada",
+      "description": "Une entreprise de développement immobilier de premier plan spécialisée dans les projets résidentiels et commerciaux à travers le Québec. Le site met en avant leurs 25+ années d'expérience, leurs développements innovants et leur engagement envers la qualité et la durabilité, permettant aux clients d'explorer les projets et de se connecter avec l'équipe.",
+      "challenges": "Créer une plateforme en ligne complète qui présente des projets immobiliers diversifiés et construit la crédibilité grâce à une présentation professionnelle et des informations détaillées sur les projets.",
+      "solution": "Construit un site web responsive avec des galeries de projets, des descriptions de services et des formulaires de contact, fournissant à MB Group Canada une présence en ligne efficace pour attirer les investisseurs et les partenaires."
+    },
+    "progix": {
+      "title": "Progix",
+      "description": "L'agence de développement logiciel basée à Montréal où j'ai travaillé. Le site présente notre expertise en développement web et mobile, IA, blockchain et systèmes d'affaires, mettant en avant les capacités de notre équipe et les projets réussis pour attirer les clients potentiels.",
+      "challenges": "Créer un site web professionnel qui représente les services diversifiés et l'expertise technique de l'agence tout en maintenant un design moderne et engageant.",
+      "solution": "Construit un site web Next.js responsive avec des sections de services détaillées, des profils d'équipe, des études de cas et des formulaires de contact, positionnant efficacement Progix comme un partenaire de développement logiciel de premier plan."
+    },
+    "conseilcm360": {
+      "title": "Conseil CM360",
+      "description": "Un cabinet de conseil spécialisé dans l'optimisation de la gestion de trésorerie pour les entreprises. Le site a été hautement apprécié par le client pour son design et sa fonctionnalité, présentant leur expertise en diagnostics, gestion de liquidité et optimisation des coûts pour attirer les clients cherchant des solutions de trésorerie.",
+      "challenges": "Implémenter des modales pour la première fois pour améliorer l'interaction utilisateur et afficher des informations détaillées sur les services de manière dynamique.",
+      "solution": "Intégré avec succès des modales dans le site web, créant une expérience utilisateur engageante qui a été très appréciée par le client."
+    },
+    "humanicia": {
+      "title": "Humanicia",
+      "description": "Humanicia combat la solitude en offrant une véritable compagnie humaine grâce à des appels téléphoniques personnalisés, des chats vidéo et des activités en personne, fournissant des connexions authentiques qui apportent chaleur et sens aux moments quotidiens.",
+      "challenges": "Développer une plateforme qui facilite des connexions humaines authentiques tout en assurant la sécurité des utilisateurs, la qualité des agents et une réservation transparente pour divers types d'interactions.",
+      "solution": "Construit une plateforme web intuitive avec des profils d'agents, des plans d'abonnement flexibles et des systèmes de réservation sécurisés, permettant aux utilisateurs d'accéder facilement à une compagnie significative et de combattre efficacement la solitude."
+    },
+    "cheminement": {
+      "title": "Cheminement",
+      "description": "Une plateforme intégrée de santé mentale qui connecte les utilisateurs avec des professionnels qualifiés pour des soins personnalisés. Le site propose des informations détaillées sur les services, l'appariement professionnel et des ressources éducatives pour soutenir les parcours de bien-être mental et fournir un soutien accessible en santé mentale.",
+      "challenges": "Créer une plateforme informative et digne de confiance qui communique clairement les services de santé mentale et assure la confidentialité et l'accessibilité des utilisateurs.",
+      "solution": "Construit une application Next.js responsive avec des tableaux de bord client et professionnel, une intégration de base de données utilisant MongoDB et une authentification JWT, fournissant une plateforme complète pour le soutien en santé mentale."
+    }
+  },
+  "achievements": {
+    "mastersDegree": {
+      "title": "Master en Systèmes d'Information et Décision",
+      "description": "Université Badji Mokhtar, Annaba, Algérie. Actuellement en cours d'études avancées en systèmes d'information, soutien à la décision et systèmes intelligents, avec un programme axé sur la complexité algorithmique, la programmation Java avancée, les Architectures Orientées Services, l'Apprentissage Automatique et l'Apprentissage Profond, l'informatique en nuage, la théorie de l'information et les systèmes de bases de données avancés."
+    },
+    "bachelorsDegree": {
+      "title": "Licence en Informatique (B.Sc.)",
+      "description": "Université Badji Mokhtar, Annaba, Algérie. Programme complet couvrant les algorithmes, les structures de données, l'architecture informatique, la théorie des graphes, les systèmes d'information, les systèmes de bases de données, les systèmes d'exploitation, la théorie des compilateurs, la programmation orientée objet, l'ingénierie logicielle, le développement web, les réseaux informatiques, les fondamentaux de l'IA, la cybersécurité, le développement mobile et les données semi-structurées."
+    }
+  },
+  "contact": {
+    "mainHeading": "Unissons nos forces pour transformer vos concepts en expériences numériques exceptionnelles !",
+    "messageMe": "Envoyez-moi un message",
+    "emailMe": "Envoyez-moi un email",
+    "sectionTitle": {
+      "backgroundText": "CONTACT",
+      "title": "ne sois pas un étranger !",
+      "subtitle": "Soyons amis, contactez-moi sur les réseaux sociaux via les liens ci-dessous"
+    },
+    "social": {
+      "linkedin": {
+        "name": "Mohamed Deneche",
+        "description": "Consultez mon CV et connectons-nous"
+      },
+      "instagram": {
+        "name": "@mohamed._dn",
+        "description": "C'est privé mais je peux faire une exception pour toi 😉"
+      },
+      "github": {
+        "name": "mohameddn988",
+        "description": "Explorez mes projets et dépôts de code"
+      }
+    }
+  }
+}

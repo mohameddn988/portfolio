@@ -4,9 +4,11 @@ import React, { useState } from "react";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { projects } from "@/data/projects";
 import Link from "next/link";
+import { useI18n } from "@/i18n/useI18n";
 
 export default function ProjectsPage() {
   const [filter, setFilter] = useState<"all" | "featured">("all");
+  const { t } = useI18n();
 
   const filteredProjects =
     filter === "all" ? projects : projects.filter((p) => p.featured);
@@ -14,32 +16,32 @@ export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-primary">
       <SectionTitle
-        title="More Projects"
-        backgroundText="PROJECTS"
-        subtitle="A showcase of my work"
+        title={t("projects.title")}
+        backgroundText={t("projects.backgroundText")}
+        subtitle={t("projects.subtitle")}
       />
 
       {/* Filter Buttons */}
       <div className="max-w-250 mx-auto px-4 md:px-6 mt-10 flex justify-center gap-4">
         <button
           onClick={() => setFilter("all")}
-          className={`px-6 py-2.5 rounded-full text-sm font-bold tracking-wider transition-all ${
+          className={`w-36 px-6 py-2.5 rounded-full text-sm font-bold tracking-wider transition-all ${
             filter === "all"
               ? "bg-secondary text-primary shadow-lg shadow-secondary/50"
               : "bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white border border-white/10"
           }`}
         >
-          PROJECTS
+          {t("projects.filterAll")}
         </button>
         <button
           onClick={() => setFilter("featured")}
-          className={`px-6 py-2.5 rounded-full text-sm font-bold tracking-wider transition-all ${
+          className={`w-36 px-6 py-2.5 rounded-full text-sm font-bold tracking-wider transition-all ${
             filter === "featured"
               ? "bg-secondary text-primary shadow-lg shadow-secondary/50"
               : "bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white border border-white/10"
           }`}
         >
-          FEATURED
+          {t("projects.filterFeatured")}
         </button>
       </div>
 
@@ -56,7 +58,7 @@ export default function ProjectsPage() {
               {project.featured && (
                 <div className="absolute top-4 right-4 z-10">
                   <span className="bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full">
-                    FEATURED
+                    {t("projectDetail.featured")}
                   </span>
                 </div>
               )}
@@ -67,7 +69,7 @@ export default function ProjectsPage() {
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={project.gallery[0]}
-                    alt={project.title}
+                    alt={t(project.title)}
                     className="w-full h-full object-fill"
                   />
                 ) : (
@@ -100,30 +102,33 @@ export default function ProjectsPage() {
                 {/* Title - Fixed height for 1 line */}
                 <div className="min-h-12 mb-3">
                   <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors line-clamp-1 leading-tight">
-                    {project.title}
+                    {t(project.title)}
                   </h3>
                 </div>
 
                 {/* Description - Fixed height for 3 lines */}
                 <div className="min-h-16 mb-4">
                   <p className="text-zinc-400 text-sm line-clamp-3 leading-relaxed text-justify">
-                    {project.description}
+                    {t(project.description)}
                   </p>
                 </div>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.slice(0, 3).map((tag, index) => (
-                    <span
-                      key={index}
-                      className="text-xs font-semibold text-zinc-500 bg-white/5 px-3 py-1 rounded-full border border-white/10"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                  {project.tags.length > 3 && (
-                    <span className="text-xs font-semibold text-zinc-500 bg-white/5 px-3 py-1 rounded-full border border-white/10">
-                      +{project.tags.length - 3}
+                <div className="flex gap-2 mb-4 overflow-hidden">
+                  {project.tags
+                    .sort((a, b) => t(a).length - t(b).length)
+                    .slice(0, 2)
+                    .map((tag, index) => (
+                      <span
+                        key={index}
+                        className="text-xs font-semibold text-zinc-500 bg-white/5 px-3 py-1 rounded-full border border-white/10 whitespace-nowrap"
+                      >
+                        {t(tag)}
+                      </span>
+                    ))}
+                  {project.tags.length > 2 && (
+                    <span className="text-xs font-semibold text-zinc-500 bg-white/5 px-3 py-1 rounded-full border border-white/10 whitespace-nowrap">
+                      +{project.tags.length - 2}
                     </span>
                   )}
                 </div>
@@ -176,7 +181,7 @@ export default function ProjectsPage() {
                         <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
                         <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                       </svg>
-                      {project.role}
+                      {t(project.role)}
                     </span>
                   )}
                 </div>
@@ -184,7 +189,7 @@ export default function ProjectsPage() {
                 {/* View Details Link - Always at bottom */}
                 <div className="mt-auto pt-3">
                   <span className="text-secondary/80 text-xs font-bold tracking-[0.3em] uppercase group-hover:text-secondary transition-colors inline-flex items-center gap-2">
-                    VIEW DETAILS
+                    {t("projects.viewDetails")}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="14"
@@ -210,7 +215,9 @@ export default function ProjectsPage() {
         {/* Empty State */}
         {filteredProjects.length === 0 && (
           <div className="text-center py-20">
-            <p className="text-zinc-500 text-lg">No projects found</p>
+            <p className="text-zinc-500 text-lg">
+              {t("projects.noProjectsFound")}
+            </p>
           </div>
         )}
       </div>

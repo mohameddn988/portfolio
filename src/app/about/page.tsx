@@ -6,6 +6,7 @@ import Image from "next/image";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { technicalSkills } from "@/data/skills";
 import { achievements } from "@/data/achievements";
+import { useI18n } from '@/i18n/useI18n';
 
 const IconCloud = dynamic(() => import("@/components/ui/icon-cloud"), {
   ssr: false,
@@ -17,12 +18,14 @@ const IconCloud = dynamic(() => import("@/components/ui/icon-cloud"), {
 });
 
 export default function AboutPage() {
+  const { t } = useI18n();
+
   return (
     <main className="min-h-screen bg-primary px-16 md:px-24 lg:px-32">
       <SectionTitle
-        title="Get to Know Me!"
+        title={t("about.title")}
         backgroundText="HELLO"
-        subtitle="Let me introduce myself briefly"
+        subtitle={t("about.subtitle")}
       />
 
       {/* Bio Section */}
@@ -33,50 +36,38 @@ export default function AboutPage() {
             <div className="space-y-6 lg:col-span-1">
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                  Hi, I'm{" "}
-                  <span className="text-secondary">Deneche Mohamed</span>
+                  {t("about.greeting")}{" "}
+                  <span className="text-secondary">{t("about.name")}</span>
                 </h2>
                 <p className="text-xl text-zinc-400 font-light">
-                  Full Stack & Mobile Developer
+                  {t("about.role")}
                 </p>
               </div>
 
               <div className="space-y-4 text-zinc-300 leading-relaxed text-justify">
-                <p>
-                  I'm a fullstack and mobile developer passionate about creating
-                  elegant solutions to complex problems. With expertise in both
-                  frontend and backend technologies, I build seamless, scalable
-                  applications that make a real impact.
-                </p>
-                <p>
-                  Driven by curiosity and continuous learning, I specialize in
-                  architecting APIs, optimizing databases, and developing
-                  cross-platform mobile apps. I value clean code, collaboration,
-                  and innovative thinking in creating meaningful digital
-                  solutions.
-                </p>
-                <p>
-                  Outside of coding, I stay updated with emerging technologies,
-                  contribute to open-source projects, and mentor aspiring
-                  developers, always aiming to deliver user-friendly,
-                  high-quality products.
-                </p>
+                <p>{t("about.bio1")}</p>
+                <p>{t("about.bio2")}</p>
+                <p>{t("about.bio3")}</p>
               </div>
 
               {/* Quick Stats */}
               <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-secondary">15+</div>
-                  <div className="text-sm text-zinc-500 mt-1">Projects</div>
+                  <div className="text-sm text-zinc-500 mt-1">
+                    {t("about.stats.projects")}
+                  </div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-secondary">6+</div>
-                  <div className="text-sm text-zinc-500 mt-1">Months Exp</div>
+                  <div className="text-sm text-zinc-500 mt-1">
+                    {t("about.stats.experience")}
+                  </div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-secondary">20+</div>
                   <div className="text-sm text-zinc-500 mt-1">
-                    Contributions
+                    {t("about.stats.contributions")}
                   </div>
                 </div>
               </div>
@@ -125,8 +116,8 @@ export default function AboutPage() {
 
       {/* Skills Icon Cloud */}
       <SectionTitle
-        title="Technical Skills Cloud"
-        subtitle="Technologies I work with"
+        title={t("skills.title")}
+        subtitle={t("skills.subtitle")}
         backgroundText="SKILLS"
       />
       <section className="max-w-250 mx-auto px-4 md:px-6 -mt-16 pb-16">
@@ -150,7 +141,7 @@ export default function AboutPage() {
             {/* Left Column - Title (Sticky) */}
             <div className="flex flex-col justify-start sticky top-35 md:col-span-2">
               <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-                ACHIEVEMENTS & MILESTONES
+                {t("about.achievementsTitle")}
               </h2>
               <div className="h-[1vh]"></div>
             </div>
@@ -177,11 +168,13 @@ export default function AboutPage() {
                         {/* Content */}
                         <div className="flex-1">
                           <h3 className="text-3xl font-bold text-white mb-2">
-                            {achievement.title}
+                            {t(achievement.title)}
                           </h3>
-                          <p className="text-base text-zinc-400">
-                            {achievement.description}
-                          </p>
+                          <div className="min-h-32">
+                            <p className="text-base text-zinc-400 line-clamp-5 text-justify">
+                              {t(achievement.description)}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>

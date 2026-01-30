@@ -10,17 +10,17 @@ export interface WorkExperience {
 export const workExperiences: WorkExperience[] = [
   {
     id: "progix",
-    company: "Progix",
-    role: "Full Stack Developer",
-    period: "July 2025 - January 2026",
+    company: "workExperience.progix.company",
+    role: "workExperience.progix.role",
+    period: "workExperience.progix.period",
     logo: "/WorkExperience/Progix.svg",
     height: "h-12",
   },
   {
     id: "freelancer",
-    company: "Freelance",
-    role: "Full Stack Developer",
-    period: "June 2024 - June 2025",
+    company: "workExperience.freelancer.company",
+    role: "workExperience.freelancer.role",
+    period: "workExperience.freelancer.period",
     logo: "Logo.png",
     height: "h-12",
   },

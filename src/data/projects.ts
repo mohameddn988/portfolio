@@ -19,16 +19,15 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "queendeq",
-    title: "Queen De Q",
-    description:
-      "A transformative journey of self-discovery that empowers women to embrace their inner sovereignty and navigate relationships with wisdom and grace. Queen De Q features an AI-powered chatbot and three core experiences: self-discovery through inner Queen archetypes, insights into male archetypes in relationships, and emotional support rituals. It creates a safe space where women can explore their authentic selves, heal emotional patterns, and build meaningful connections through playful yet profound self-reflection tools.",
+    title: "projectDetails.queendeq.title",
+    description: "projectDetails.queendeq.description",
     tags: [
-      "Web App",
-      "AI Chatbot",
-      "Personal Development",
-      "Feminist Tech",
-      "Wellness App",
-      "Self-Care",
+      "tags.webApp",
+      "tags.aiChatbot",
+      "tags.personalDevelopment",
+      "tags.feministTech",
+      "tags.wellnessApp",
+      "tags.selfCare",
     ],
     link: "https://www.queendeq.com/",
     technologies: [
@@ -46,12 +45,10 @@ export const projects: Project[] = [
       "Mongoose",
       "Framer Motion",
     ],
-    challenges:
-      "Delivering a stunning and attractive user experience to effectively attract users to the main platform through the landing page, and customizing the AI chatbot to provide tailored interactions for each of the three core experiences: self-discovery, relationship insights, and emotional support.",
-    solution:
-      "Designed an engaging landing page with compelling visuals, clear value proposition highlighting feminist personal development tools, and interactive elements that guide users towards the app, resulting in high user attraction and seamless conversion to the platform.",
+    challenges: "projectDetails.queendeq.challenges",
+    solution: "projectDetails.queendeq.solution",
     year: "2025",
-    role: "Fullstack Developer",
+    role: "roles.fullstackDeveloper",
     gallery: [
       "/Project/QueenDeQ/Screenshot 2026-01-30 013433.png",
       "/Project/QueenDeQ/Screenshot 2026-01-30 013456.png",
@@ -67,23 +64,20 @@ export const projects: Project[] = [
   },
   {
     id: "pump-fourchette",
-    title: "Pump Fourchette",
-    description:
-      "Pump Fourchette eliminates the stress of holiday meal preparation by providing expertly crafted, fresh dishes for celebrations and events, delivering premium quality and convenience that lets families focus on creating joyful, memorable moments together.",
+    title: "projectDetails.pump-fourchette.title",
+    description: "projectDetails.pump-fourchette.description",
     tags: [
-      "Web App",
-      "E-commerce",
-      "Food Delivery",
-      "Catering",
-      "Festive Meals",
+      "tags.webApp",
+      "tags.ecommerce",
+      "tags.foodDelivery",
+      "tags.catering",
+      "tags.festiveMeals",
     ],
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    challenges:
-      "Creating an intuitive online platform for ordering diverse festive meals and ensuring reliable delivery coordination for special events.",
-    solution:
-      "Built a responsive web application with an integrated ordering system, enabling easy access to premium, fresh-prepared meals that enhance celebrations.",
+    challenges: "projectDetails.pump-fourchette.challenges",
+    solution: "projectDetails.pump-fourchette.solution",
     year: "2025",
-    role: "Fullstack Developer",
+    role: "roles.fullstackDeveloper",
     gallery: [
       "/Project/PumpFourchette/Screenshot 2026-01-30 094121.png",
       "/Project/PumpFourchette/Screenshot 2026-01-30 094136.png",
@@ -101,25 +95,22 @@ export const projects: Project[] = [
   },
   {
     id: "bless-fourchette",
-    title: "Bless Fourchette",
-    description:
-      "Bless Fourchette delivers nourishing, vegan Canado-Haitian meals for schools and families, combining traditional flavors with community values, while supporting sickle cell anemia research through charitable contributions.",
+    title: "projectDetails.bless-fourchette.title",
+    description: "projectDetails.bless-fourchette.description",
     tags: [
-      "Web App",
-      "E-commerce",
-      "Food Delivery",
-      "Vegan Meals",
-      "Community Service",
+      "tags.webApp",
+      "tags.ecommerce",
+      "tags.foodDelivery",
+      "tags.veganMeals",
+      "tags.communityService",
     ],
-    challenges:
-      "Designing a distinct visual identity and user experience for a meal service platform similar to previous work for the same client, ensuring differentiation while maintaining brand consistency and incorporating faith-based community values.",
-    solution:
-      "Crafted a unique design system inspired by cultural heritage and charitable mission, featuring warm, community-focused visuals and intuitive ordering flows that set the platform apart while delivering seamless functionality for meal planning and charitable contributions.",
+    challenges: "projectDetails.bless-fourchette.challenges",
+    solution: "projectDetails.bless-fourchette.solution",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     link: "https://bless-fourchette.vercel.app/",
     featured: false,
     year: "2025",
-    role: "Fullstack Developer",
+    role: "roles.fullstackDeveloper",
     gallery: [
       "/Project/BlessFourchette/Screenshot 2026-01-30 102823.png",
       "/Project/BlessFourchette/Screenshot 2026-01-30 102839.png",
@@ -130,19 +121,15 @@ export const projects: Project[] = [
   },
   {
     id: "orionconseil",
-    title: "Orion Conseil",
-    description: "",
+    title: "projectDetails.orionconseil.title",
+    description: "projectDetails.orionconseil.description",
     link: "https://www.orionconseil.com/",
     featured: false,
     year: "2025",
-    role: "Fullstack Developer",
-    description:
-      "Developed a professional website for Orion Conseil, a consulting firm specializing in business strategy, accounting, and research services. The design was mostly driven by the client, and I didn't have much to say in it. The site showcases their expertise in strategic consulting, financial compliance, and data-driven insights, featuring a modern design that reflects their commitment to excellence, ethics, and innovation.",
-    tags: ["Web App", "Consulting", "Business Services"],
-    challenges:
-      "The most challenging thing I faced was to meet the client's idea and deliver its expectations.",
-    solution:
-      "Successfully implemented the client's design vision by building a responsive Next.js application with clean navigation, detailed service sections, client testimonials, and integrated contact forms, ensuring the final product aligned perfectly with their expectations and provided an engaging user experience.",
+    role: "roles.fullstackDeveloper",
+    tags: ["tags.webApp", "tags.consulting", "tags.businessServices"],
+    challenges: "projectDetails.orionconseil.challenges",
+    solution: "projectDetails.orionconseil.solution",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -161,18 +148,20 @@ export const projects: Project[] = [
   },
   {
     id: "monimpression",
-    title: "Mon Impression",
-    description:
-      "A custom clothing shop specializing in personalized t-shirts, hoodies, and accessories. The platform features an online customization studio with real-time previews, guided quotes, and fast delivery across Quebec, enabling customers to create unique, high-quality garments that reflect their personal style or brand.",
-    tags: ["Web App", "E-commerce", "Custom Clothing", "Online Customization"],
+    title: "projectDetails.monimpression.title",
+    description: "projectDetails.monimpression.description",
+    tags: [
+      "tags.webApp",
+      "tags.ecommerce",
+      "tags.customClothing",
+      "tags.onlineCustomization",
+    ],
     link: "https://www.monimpression.ca/",
     featured: false,
     year: "2025",
-    role: "Fullstack Developer",
-    challenges:
-      "Implementing a user-friendly online customization tool with real-time previews and ensuring seamless integration with production processes for custom orders.",
-    solution:
-      "Built a responsive Next.js application with an intuitive customization interface, secure payment processing via Stripe, and efficient order management to deliver personalized products quickly and reliably.",
+    role: "roles.fullstackDeveloper",
+    challenges: "projectDetails.monimpression.challenges",
+    solution: "projectDetails.monimpression.solution",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Vercel"],
     FeaturedCover: "/Project/MonImpression/LogoWhite.png",
     gallery: [
@@ -183,18 +172,20 @@ export const projects: Project[] = [
   },
   {
     id: "confort-plus-65",
-    title: "Confort Plus 65",
-    description:
-      "This was my first professional website for Confort Plus 65, a dedicated home care service provider for seniors aged 65 and older. This project marked my entry into web development, creating an informative online platform that highlights their personalized care services, including daily activities assistance, domestic help, and support for cognitive difficulties, enabling families to access compassionate senior care information.",
-    tags: ["Web App", "Home Care", "Seniors Services", "First Project"],
+    title: "projectDetails.confort-plus-65.title",
+    description: "projectDetails.confort-plus-65.description",
+    tags: [
+      "tags.webApp",
+      "tags.homeCare",
+      "tags.seniorsServices",
+      "tags.firstProject",
+    ],
     link: "https://confort-plus-65.vercel.app/",
     featured: false,
     year: "2025",
-    role: "Fullstack Developer",
-    challenges:
-      "As my inaugural fullstack web development project, the primary challenges involved learning to build with Next.js, integrating a database for data management, and implementing JWT authentication for secure user access, while adhering to the client's design vision and ensuring the site effectively communicated Confort Plus 65's mission.",
-    solution:
-      "Successfully built a responsive Next.js application with database integration and JWT authentication, delivering a functional online platform that allows Confort Plus 65 to manage services and connect with families securely.",
+    role: "roles.fullstackDeveloper",
+    challenges: "projectDetails.confort-plus-65.challenges",
+    solution: "projectDetails.confort-plus-65.solution",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -211,19 +202,22 @@ export const projects: Project[] = [
   },
   {
     id: "tct",
-    title: "TCT",
-    description:
-      "TCT Pro transforms the automotive experience in Montreal by providing an integrated one-stop solution for used car sales, expert maintenance, professional detailing, vehicle customization, and personalized consultations, enabling customers to manage all vehicle needs efficiently and with confidence.",
-    tags: ["Web App", "Automotive", "E-commerce", "Vehicle Sales", "Services"],
-    challenges:
-      "Creating a comprehensive online platform that integrates vehicle sales, service listings, and customer resources for a seamless one-stop automotive experience.",
-    solution:
-      "Developed an intuitive website showcasing vehicle inventory, detailed services, and easy contact options, providing customers with a complete automotive hub that simplifies access to all their vehicle needs.",
+    title: "projectDetails.tct.title",
+    description: "projectDetails.tct.description",
+    tags: [
+      "tags.webApp",
+      "tags.automotive",
+      "tags.ecommerce",
+      "tags.vehicleSales",
+      "tags.services",
+    ],
+    challenges: "projectDetails.tct.challenges",
+    solution: "projectDetails.tct.solution",
     link: "https://www.tct.pro/",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     featured: true,
     year: "2025",
-    role: "Fullstack Developer",
+    role: "roles.fullstackDeveloper",
     gallery: [
       "/Project/TctPro/Screenshot 2026-01-30 100339.png",
       "/Project/TctPro/Screenshot 2026-01-30 100356.png",
@@ -235,18 +229,20 @@ export const projects: Project[] = [
   },
   {
     id: "milleniumautos",
-    title: "Millenium Autos",
-    description:
-      "A Quebec-based vehicle purchasing service that simplifies the process of selling used cars. The platform features an easy-to-use form for vehicle submissions, transparent pricing, and a commitment to hassle-free transactions, enabling sellers to get fair offers quickly and connect with a trusted dealer.",
-    tags: ["Web App", "Automotive", "Vehicle Sales", "E-commerce"],
+    title: "projectDetails.milleniumautos.title",
+    description: "projectDetails.milleniumautos.description",
+    tags: [
+      "tags.webApp",
+      "tags.automotive",
+      "tags.vehicleSales",
+      "tags.ecommerce",
+    ],
     link: "https://www.milleniumautos.ca/",
     featured: false,
     year: "2025",
-    role: "Fullstack Developer",
-    challenges:
-      "Creating an intuitive online platform that guides users through the vehicle selling process and builds trust through transparent communication and clear value propositions.",
-    solution:
-      "Built a responsive website with a user-friendly contact form, detailed service information, and a step-by-step selling guide, providing Millenium Autos with an effective online presence to attract and convert potential sellers.",
+    role: "roles.fullstackDeveloper",
+    challenges: "projectDetails.milleniumautos.challenges",
+    solution: "projectDetails.milleniumautos.solution",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     FeaturedCover: "/Project/MilleniumAutos/Logo.png",
     gallery: [
@@ -257,18 +253,20 @@ export const projects: Project[] = [
   },
   {
     id: "mb-group-canada",
-    title: "MB Group Canada",
-    description:
-      "A leading real estate development company specializing in residential and commercial projects across Quebec. The site highlights their 25+ years of experience, innovative developments, and commitment to quality and sustainability, enabling clients to explore projects and connect with the team.",
-    tags: ["Web App", "Real Estate", "Construction", "Business Services"],
+    title: "projectDetails.mb-group-canada.title",
+    description: "projectDetails.mb-group-canada.description",
+    tags: [
+      "tags.webApp",
+      "tags.realEstate",
+      "tags.construction",
+      "tags.businessServices",
+    ],
     link: "https://mb-group-canada.vercel.app/",
     featured: false,
     year: "2025",
-    role: "Fullstack Developer",
-    challenges:
-      "Creating a comprehensive online platform that showcases diverse real estate projects and builds credibility through professional presentation and detailed project information.",
-    solution:
-      "Built a responsive website with project galleries, service descriptions, and contact forms, providing MB Group Canada with an effective online presence to attract investors and partners.",
+    role: "roles.fullstackDeveloper",
+    challenges: "projectDetails.mb-group-canada.challenges",
+    solution: "projectDetails.mb-group-canada.solution",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     FeaturedCover: "/Project/MBGroupCanada/logoMB.png",
     gallery: [
@@ -285,18 +283,20 @@ export const projects: Project[] = [
   },
   {
     id: "progix",
-    title: "Progix",
-    description:
-      "The Montreal-based software development agency where I worked. The site showcases our expertise in web and mobile development, AI, blockchain, and business systems, highlighting our team's capabilities and successful projects to attract potential clients.",
-    tags: ["Web App", "Agency", "Software Development", "Business Services"],
+    title: "projectDetails.progix.title",
+    description: "projectDetails.progix.description",
+    tags: [
+      "tags.webApp",
+      "tags.agency",
+      "tags.softwareDevelopment",
+      "tags.businessServices",
+    ],
     link: "https://www.progix.pro/",
     featured: false,
     year: "2025",
-    role: "Fullstack Developer",
-    challenges:
-      "Creating a professional website that represents the agency's diverse services and technical expertise while maintaining a modern, engaging design.",
-    solution:
-      "Built a responsive Next.js website with detailed service sections, team profiles, case studies, and contact forms, effectively positioning Progix as a leading software development partner.",
+    role: "roles.fullstackDeveloper",
+    challenges: "projectDetails.progix.challenges",
+    solution: "projectDetails.progix.solution",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     FeaturedCover: "/Project/Progix/logo.png",
     gallery: [
@@ -315,18 +315,20 @@ export const projects: Project[] = [
   },
   {
     id: "conseilcm360",
-    title: "Conseil CM360",
-    description:
-      "A consulting firm specializing in treasury management optimization for businesses. The site was highly praised by the client for its design and functionality, showcasing their expertise in diagnostics, liquidity management, and cost optimization to attract clients seeking treasury solutions.",
-    tags: ["Web App", "Consulting", "Treasury Management", "Business Services"],
+    title: "projectDetails.conseilcm360.title",
+    description: "projectDetails.conseilcm360.description",
+    tags: [
+      "tags.webApp",
+      "tags.consulting",
+      "tags.treasuryManagement",
+      "tags.businessServices",
+    ],
     link: "https://www.conseilcm360.com/",
     featured: false,
     year: "2025",
-    role: "Fullstack Developer",
-    challenges:
-      "Implementing modals for the first time to enhance user interaction and display detailed service information dynamically.",
-    solution:
-      "Successfully integrated modals into the website, creating an engaging user experience that was highly appreciated by the client.",
+    role: "roles.fullstackDeveloper",
+    challenges: "projectDetails.conseilcm360.challenges",
+    solution: "projectDetails.conseilcm360.solution",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     FeaturedCover: "/Project/CM360/logomobile.jpg",
     gallery: [
@@ -337,20 +339,17 @@ export const projects: Project[] = [
   },
   {
     id: "humanicia",
-    title: "Humanicia",
-    description:
-      "Humanicia combats loneliness by offering genuine human companionship through personalized phone calls, video chats, and in-person activities, providing authentic connections that bring warmth and meaning to everyday moments.",
+    title: "projectDetails.humanicia.title",
+    description: "projectDetails.humanicia.description",
     tags: [
-      "Web App",
-      "Companionship",
-      "Wellness",
-      "Social Services",
-      "E-commerce",
+      "tags.webApp",
+      "tags.companionship",
+      "tags.wellness",
+      "tags.socialServices",
+      "tags.ecommerce",
     ],
-    challenges:
-      "Developing a platform that facilitates authentic human connections while ensuring user safety, agent quality, and seamless booking for various interaction types.",
-    solution:
-      "Built an intuitive web platform with agent profiles, flexible subscription plans, and secure booking systems, enabling users to easily access meaningful companionship and combat loneliness effectively.",
+    challenges: "projectDetails.humanicia.challenges",
+    solution: "projectDetails.humanicia.solution",
     technologies: [
       "Next.js",
       "MongoDB",
@@ -363,7 +362,7 @@ export const projects: Project[] = [
     link: "https://www.humanicia.com/",
     featured: true,
     year: "2025",
-    role: "Fullstack Developer",
+    role: "roles.fullstackDeveloper",
     gallery: [
       "/Project/Humanicia/Screenshot 2026-01-30 101648.png",
       "/Project/Humanicia/Screenshot 2026-01-30 101713.png",
@@ -375,18 +374,20 @@ export const projects: Project[] = [
   },
   {
     id: "cheminement",
-    title: "Cheminement",
-    description:
-      "An integrated mental health platform that connects users with qualified professionals for personalized care. The site features detailed service information, professional matching, and educational resources to support mental wellness journeys and provide accessible mental health support.",
-    tags: ["Web App", "Mental Health", "Healthcare", "Platform"],
+    title: "projectDetails.cheminement.title",
+    description: "projectDetails.cheminement.description",
+    tags: [
+      "tags.webApp",
+      "tags.mentalHealth",
+      "tags.healthcare",
+      "tags.platform",
+    ],
     link: "https://cheminement.vercel.app/",
     featured: false,
     year: "2025",
-    role: "Fullstack Developer",
-    challenges:
-      "Creating an informative and trustworthy platform that clearly communicates mental health services and ensures user privacy and accessibility.",
-    solution:
-      "Built a responsive Next.js application with client and professional dashboards, database integration using MongoDB, and JWT authentication, providing a comprehensive platform for mental health support.",
+    role: "roles.fullstackDeveloper",
+    challenges: "projectDetails.cheminement.challenges",
+    solution: "projectDetails.cheminement.solution",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -412,5 +413,4 @@ export const projects: Project[] = [
       "/Project/Cheminement/Screenshot 2026-01-30 115947.png",
     ],
   },
-
 ];

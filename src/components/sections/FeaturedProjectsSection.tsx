@@ -4,14 +4,17 @@ import React from "react";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { projects } from "@/data/projects";
 import Link from "next/link";
+import { useI18n } from "@/i18n/useI18n";
 
 const FeaturedProjects = () => {
+  const { t } = useI18n();
+
   return (
     <section className="pb-35 bg-primary">
       <SectionTitle
-        title="Featured Projects"
-        backgroundText="FEATURED"
-        subtitle="Yeah, I work hard"
+        title={t("featuredProjects.title")}
+        backgroundText={t("featuredProjects.backgroundText")}
+        subtitle={t("featuredProjects.subtitle")}
       />
 
       <div className="max-w-250 mx-auto px-4 md:px-6 mt-10 flex flex-col gap-50">
@@ -26,7 +29,7 @@ const FeaturedProjects = () => {
               {/* Background Number */}
               <img
                 src={`/Project/Number${["One", "Two", "Three", "Four"][index % 4]}.svg`}
-                alt={`Project ${index + 1}`}
+                alt={t("featuredProjects.projectLabel") + ` ${index + 1}`}
                 className="absolute top-0 right-0 w-32 md:w-36 lg:w-40 h-auto z-0 select-none pointer-events-none transform -translate-y-1/2 translate-x-14"
               />
 
@@ -40,7 +43,10 @@ const FeaturedProjects = () => {
                       transform: "rotate(180deg)",
                     }}
                   >
-                    {project.tags.slice(0, 4).join(" ")}
+                    {project.tags
+                      .slice(0, 3)
+                      .map((tag) => t(tag))
+                      .join(" ")}
                   </div>
                 </div>
 
@@ -53,7 +59,7 @@ const FeaturedProjects = () => {
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={project.FeaturedCover}
-                        alt={project.title}
+                        alt={t(project.title)}
                         className="w-full h-full object-contain"
                       />
                     ) : (
@@ -104,20 +110,20 @@ const FeaturedProjects = () => {
                 <div className="col-span-1 md:col-span-5 flex flex-col justify-center gap-5 md:pl-4">
                   <div>
                     <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-none mb-2 group-hover:text-secondary transition-colors">
-                      {project.title.split(" ")[0]}
+                      {t(project.title).split(" ")[0]}
                     </h3>
-                    {project.title.split(" ").length > 1 && (
+                    {t(project.title).split(" ").length > 1 && (
                       <p className="text-lg md:text-xl text-zinc-400 font-light tracking-wide group-hover:text-zinc-300 transition-colors">
-                        {project.title.split(" ").slice(1).join(" ")}
+                        {t(project.title).split(" ").slice(1).join(" ")}
                       </p>
                     )}
                   </div>
 
                   {project.description && (
                     <p className="text-sm md:text-base text-zinc-300 mt-2 leading-relaxed">
-                      {project.description.length > 200
-                        ? project.description.slice(0, 200) + "..."
-                        : project.description}
+                      {t(project.description).length > 200
+                        ? t(project.description).slice(0, 200) + "..."
+                        : t(project.description)}
                     </p>
                   )}
 
@@ -134,10 +140,8 @@ const FeaturedProjects = () => {
                     </div>
                   )}
 
-                  <div
-                    className="relative text-secondary/80 text-xs md:text-sm font-bold tracking-[0.3em] uppercase group-hover:text-secondary transition-colors w-fit pb-1 border-b-2 border-secondary/80 group-hover:border-secondary"
-                  >
-                    View Details
+                  <div className="relative text-secondary/80 text-xs md:text-sm font-bold tracking-[0.3em] uppercase group-hover:text-secondary transition-colors w-fit pb-1 border-b-2 border-secondary/80 group-hover:border-secondary">
+                    {t("featuredProjects.viewDetails")}
                   </div>
 
                   <div className="flex gap-5 mt-2">

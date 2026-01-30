@@ -1,0 +1,241 @@
+{
+  "nav": {
+    "home": "HOME",
+    "projects": "PROJECTS",
+    "about": "ABOUT"
+  },
+  "header": {
+    "logoAlt": "Logo",
+    "switchLanguageAria": "Switch language",
+    "emailAria": "Email"
+  },
+  "hero": {
+    "name": "DENECHE MOHAMED",
+    "line1": "DESIGNING",
+    "line2": "SIMPLICITY",
+    "line3": "WITH",
+    "line4": "PURPOSE",
+    "portraitAlt": "Portrait",
+    "logoAlt": "Logo"
+  },
+  "intro": {
+    "greeting": "Hello stranger!",
+    "description": "I'm passionate about designing and building scalable web and mobile products, combining solid engineering with a modern, user-focused design approach"
+  },
+  "workExperience": {
+    "title": "WORK EXPERIENCE",
+    "viewResume": "View resume",
+    "progix": {
+      "company": "Progix",
+      "role": "Full Stack Developer",
+      "period": "July 2025 - January 2026"
+    },
+    "freelancer": {
+      "company": "Freelance",
+      "role": "Full Stack Developer",
+      "period": "June 2024 - June 2025"
+    }
+  },
+  "featuredProjects": {
+    "title": "Featured Projects",
+    "subtitle": "Yeah, I work hard",
+    "backgroundText": "FEATURED",
+    "viewDetails": "View Details",
+    "projectLabel": "Project"
+  },
+  "about": {
+    "title": "Get to Know Me!",
+    "subtitle": "Let me introduce myself briefly",
+    "greeting": "Hi, I'm",
+    "name": "Deneche Mohamed",
+    "role": "Full Stack & Mobile Developer",
+    "bio1": "I'm a fullstack and mobile developer passionate about creating elegant solutions to complex problems. With expertise in both frontend and backend technologies, I build seamless, scalable applications that make a real impact.",
+    "bio2": "Driven by curiosity and continuous learning, I specialize in architecting APIs, optimizing databases, and developing cross-platform mobile apps. I value clean code, collaboration, and innovative thinking in creating meaningful digital solutions.",
+    "bio3": "Outside of coding, I stay updated with emerging technologies, contribute to open-source projects, and mentor aspiring developers, always aiming to deliver user-friendly, high-quality products.",
+    "stats": {
+      "projects": "Projects",
+      "experience": "Months Exp",
+      "contributions": "Contributions"
+    },
+    "achievementsTitle": "ACHIEVEMENTS & MILESTONES"
+  },
+  "projects": {
+    "title": "More Projects",
+    "subtitle": "A showcase of my work",
+    "filterAll": "PROJECTS",
+    "filterFeatured": "FEATURED",
+    "viewDetails": "VIEW DETAILS",
+    "noProjectsFound": "No projects found",
+    "backgroundText": "PROJECTS"
+  },
+  "projectDetail": {
+    "backToProjects": "Back to projects",
+    "featured": "FEATURED",
+    "year": "Year",
+    "role": "Role",
+    "visitLiveSite": "Visit Live Site",
+    "viewSourceCode": "View Source Code",
+    "projectGallery": "Project Gallery",
+    "keyFeatures": "Key Features",
+    "technologiesUsed": "Technologies Used",
+    "challenges": "Challenges",
+    "solution": "Solution",
+    "imageLabel": "Image"
+  },
+  "tags": {
+    "webApp": "Web App",
+    "aiChatbot": "AI Chatbot",
+    "personalDevelopment": "Personal Development",
+    "feministTech": "Feminist Tech",
+    "wellnessApp": "Wellness App",
+    "selfCare": "Self-Care",
+    "ecommerce": "E-commerce",
+    "foodDelivery": "Food Delivery",
+    "catering": "Catering",
+    "festiveMeals": "Festive Meals",
+    "veganMeals": "Vegan Meals",
+    "communityService": "Community Service",
+    "consulting": "Consulting",
+    "businessServices": "Business Services",
+    "customClothing": "Custom Clothing",
+    "onlineCustomization": "Online Customization",
+    "homeCare": "Home Care",
+    "seniorsServices": "Seniors Services",
+    "firstProject": "First Project",
+    "automotive": "Automotive",
+    "vehicleSales": "Vehicle Sales",
+    "services": "Services",
+    "realEstate": "Real Estate",
+    "construction": "Construction",
+    "agency": "Agency",
+    "softwareDevelopment": "Software Development",
+    "treasuryManagement": "Treasury Management",
+    "companionship": "Companionship",
+    "wellness": "Wellness",
+    "socialServices": "Social Services",
+    "mentalHealth": "Mental Health",
+    "healthcare": "Healthcare",
+    "platform": "Platform"
+  },
+  "roles": {
+    "fullstackDeveloper": "Fullstack Developer"
+  },
+  "skills": {
+    "title": "Technical Skills Cloud",
+    "subtitle": "Technologies I work with"
+  },
+  "projectDetails": {
+    "queendeq": {
+      "title": "Queen De Q",
+      "description": "A transformative journey of self-discovery that empowers women to embrace their inner sovereignty and navigate relationships with wisdom and grace. Queen De Q features an AI-powered chatbot and three core experiences: self-discovery through inner Queen archetypes, insights into male archetypes in relationships, and emotional support rituals. It creates a safe space where women can explore their authentic selves, heal emotional patterns, and build meaningful connections through playful yet profound self-reflection tools.",
+      "challenges": "Delivering a stunning and attractive user experience to effectively attract users to the main platform through the landing page, and customizing the AI chatbot to provide tailored interactions for each of the three core experiences: self-discovery, relationship insights, and emotional support.",
+      "solution": "Designed an engaging landing page with compelling visuals, clear value proposition highlighting feminist personal development tools, and interactive elements that guide users towards the app, resulting in high user attraction and seamless conversion to the platform."
+    },
+    "pump-fourchette": {
+      "title": "Pump Fourchette",
+      "description": "Pump Fourchette eliminates the stress of holiday meal preparation by providing expertly crafted, fresh dishes for celebrations and events, delivering premium quality and convenience that lets families focus on creating joyful, memorable moments together.",
+      "challenges": "Creating an intuitive online platform for ordering diverse festive meals and ensuring reliable delivery coordination for special events.",
+      "solution": "Built a responsive web application with an integrated ordering system, enabling easy access to premium, fresh-prepared meals that enhance celebrations."
+    },
+    "bless-fourchette": {
+      "title": "Bless Fourchette",
+      "description": "Bless Fourchette delivers nourishing, vegan Canado-Haitian meals for schools and families, combining traditional flavors with community values, while supporting sickle cell anemia research through charitable contributions.",
+      "challenges": "Designing a distinct visual identity and user experience for a meal service platform similar to previous work for the same client, ensuring differentiation while maintaining brand consistency and incorporating faith-based community values.",
+      "solution": "Crafted a unique design system inspired by cultural heritage and charitable mission, featuring warm, community-focused visuals and intuitive ordering flows that set the platform apart while delivering seamless functionality for meal planning and charitable contributions."
+    },
+    "orionconseil": {
+      "title": "Orion Conseil",
+      "description": "A consulting firm specializing in business strategy, accounting, and research services. The design was mostly driven by the client, and I didn't have much to say in it. The site showcases their expertise in strategic consulting, financial compliance, and data-driven insights, featuring a modern design that reflects their commitment to excellence, ethics, and innovation.",
+      "challenges": "The most challenging thing I faced was to meet the client's idea and deliver its expectations.",
+      "solution": "Successfully implemented the client's design vision by building a responsive Next.js application with clean navigation, detailed service sections, client testimonials, and integrated contact forms, ensuring the final product aligned perfectly with their expectations and provided an engaging user experience."
+    },
+    "monimpression": {
+      "title": "Mon Impression",
+      "description": "A custom clothing shop specializing in personalized t-shirts, hoodies, and accessories. The platform features an online customization studio with real-time previews, guided quotes, and fast delivery across Quebec, enabling customers to create unique, high-quality garments that reflect their personal style or brand.",
+      "challenges": "Implementing a user-friendly online customization tool with real-time previews and ensuring seamless integration with production processes for custom orders.",
+      "solution": "Built a responsive Next.js application with an intuitive customization interface, secure payment processing via Stripe, and efficient order management to deliver personalized products quickly and reliably."
+    },
+    "confort-plus-65": {
+      "title": "Confort Plus 65",
+      "description": "This was my first professional website for Confort Plus 65, a dedicated home care service provider for seniors aged 65 and older. This project marked my entry into web development, creating an informative online platform that highlights their personalized care services, including daily activities assistance, domestic help, and support for cognitive difficulties, enabling families to access compassionate senior care information.",
+      "challenges": "As my inaugural fullstack web development project, the primary challenges involved learning to build with Next.js, integrating a database for data management, and implementing JWT authentication for secure user access, while adhering to the client's design vision and ensuring the site effectively communicated Confort Plus 65's mission.",
+      "solution": "Successfully built a responsive Next.js application with database integration and JWT authentication, delivering a functional online platform that allows Confort Plus 65 to manage services and connect with families securely."
+    },
+    "tct": {
+      "title": "TCT",
+      "description": "TCT Pro transforms the automotive experience in Montreal by providing an integrated one-stop solution for used car sales, expert maintenance, professional detailing, vehicle customization, and personalized consultations, enabling customers to manage all vehicle needs efficiently and with confidence.",
+      "challenges": "Creating a comprehensive online platform that integrates vehicle sales, service listings, and customer resources for a seamless one-stop automotive experience.",
+      "solution": "Developed an intuitive website showcasing vehicle inventory, detailed services, and easy contact options, providing customers with a complete automotive hub that simplifies access to all their vehicle needs."
+    },
+    "milleniumautos": {
+      "title": "Millenium Autos",
+      "description": "A Quebec-based vehicle purchasing service that simplifies the process of selling used cars. The platform features an easy-to-use form for vehicle submissions, transparent pricing, and a commitment to hassle-free transactions, enabling sellers to get fair offers quickly and connect with a trusted dealer.",
+      "challenges": "Creating an intuitive online platform that guides users through the vehicle selling process and builds trust through transparent communication and clear value propositions.",
+      "solution": "Built a responsive website with a user-friendly contact form, detailed service information, and a step-by-step selling guide, providing Millenium Autos with an effective online presence to attract and convert potential sellers."
+    },
+    "mb-group-canada": {
+      "title": "MB Group Canada",
+      "description": "A leading real estate development company specializing in residential and commercial projects across Quebec. The site highlights their 25+ years of experience, innovative developments, and commitment to quality and sustainability, enabling clients to explore projects and connect with the team.",
+      "challenges": "Creating a comprehensive online platform that showcases diverse real estate projects and builds credibility through professional presentation and detailed project information.",
+      "solution": "Built a responsive website with project galleries, service descriptions, and contact forms, providing MB Group Canada with an effective online presence to attract investors and partners."
+    },
+    "progix": {
+      "title": "Progix",
+      "description": "The Montreal-based software development agency where I worked. The site showcases our expertise in web and mobile development, AI, blockchain, and business systems, highlighting our team's capabilities and successful projects to attract potential clients.",
+      "challenges": "Creating a professional website that represents the agency's diverse services and technical expertise while maintaining a modern, engaging design.",
+      "solution": "Built a responsive Next.js website with detailed service sections, team profiles, case studies, and contact forms, effectively positioning Progix as a leading software development partner."
+    },
+    "conseilcm360": {
+      "title": "Conseil CM360",
+      "description": "A consulting firm specializing in treasury management optimization for businesses. The site was highly praised by the client for its design and functionality, showcasing their expertise in diagnostics, liquidity management, and cost optimization to attract clients seeking treasury solutions.",
+      "challenges": "Implementing modals for the first time to enhance user interaction and display detailed service information dynamically.",
+      "solution": "Successfully integrated modals into the website, creating an engaging user experience that was highly appreciated by the client."
+    },
+    "humanicia": {
+      "title": "Humanicia",
+      "description": "Humanicia combats loneliness by offering genuine human companionship through personalized phone calls, video chats, and in-person activities, providing authentic connections that bring warmth and meaning to everyday moments.",
+      "challenges": "Developing a platform that facilitates authentic human connections while ensuring user safety, agent quality, and seamless booking for various interaction types.",
+      "solution": "Built an intuitive web platform with agent profiles, flexible subscription plans, and secure booking systems, enabling users to easily access meaningful companionship and combat loneliness effectively."
+    },
+    "cheminement": {
+      "title": "Cheminement",
+      "description": "An integrated mental health platform that connects users with qualified professionals for personalized care. The site features detailed service information, professional matching, and educational resources to support mental wellness journeys and provide accessible mental health support.",
+      "challenges": "Creating an informative and trustworthy platform that clearly communicates mental health services and ensures user privacy and accessibility.",
+      "solution": "Built a responsive Next.js application with client and professional dashboards, database integration using MongoDB, and JWT authentication, providing a comprehensive platform for mental health support."
+    }
+  },
+  "achievements": {
+    "mastersDegree": {
+      "title": "Master's Degree in IT Systems and Decision",
+      "description": "University Badji Mokhtar, Annaba, Algeria. Currently pursuing advanced studies in information systems, decision support, and intelligent systems, with coursework focused on algorithmic complexity, advanced Java programming, Service-Oriented Architectures, Machine Learning and Deep Learning, cloud computing, information theory, and advanced database systems."
+    },
+    "bachelorsDegree": {
+      "title": "Bachelor's Degree in Computer Science (B.Sc.)",
+      "description": "University Badji Mokhtar, Annaba, Algeria. Comprehensive curriculum covering algorithms, data structures, computer architecture, graph theory, information systems, database systems, operating systems, compiler theory, object-oriented programming, software engineering, web development, computer networks, AI fundamentals, cybersecurity, mobile development, and semi-structured data."
+    }
+  },
+  "contact": {
+    "mainHeading": "Let's team up to turn your concepts into outstanding digital experiences!",
+    "messageMe": "Message Me",
+    "emailMe": "Email Me",
+    "sectionTitle": {
+      "backgroundText": "CONTACT",
+      "title": "dont be a stranger!",
+      "subtitle": "Let's be friends, hit me out on the social media through the links below"
+    },
+    "social": {
+      "linkedin": {
+        "name": "Mohamed Deneche",
+        "description": "Check out my resume and let's connect"
+      },
+      "instagram": {
+        "name": "@mohamed._dn",
+        "description": "Its private but i can make an exception for you 😉"
+      },
+      "github": {
+        "name": "mohameddn988",
+        "description": "Explore my projects and code repositories"
+      }
+    }
+  }
+}

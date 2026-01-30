@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useState, type CSSProperties } from "react";
+import { useEffect, useState, useMemo, type CSSProperties } from "react";
 import Image from "next/image";
-import { skills } from '../../data/skills';
+import { skills } from "../../data/skills";
+import { useI18n } from "@/i18n/useI18n";
 
 export default function HeroSection() {
   const [heroScale, setHeroScale] = useState(1);
@@ -11,13 +12,17 @@ export default function HeroSection() {
   >({});
   const [typedLines, setTypedLines] = useState<string[]>([]);
   const [reduceMotion, setReduceMotion] = useState(false);
+  const { t } = useI18n();
 
-  const headlineLines = [
-    { text: "DESIGNING", muted: true },
-    { text: "SIMPLICITY", muted: false },
-    { text: "WITH", muted: true },
-    { text: "PURPOSE", muted: false },
-  ];
+  const headlineLines = useMemo(
+    () => [
+      { text: t("hero.line1"), muted: true },
+      { text: t("hero.line2"), muted: false },
+      { text: t("hero.line3"), muted: true },
+      { text: t("hero.line4"), muted: false },
+    ],
+    [t],
+  );
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
@@ -57,7 +62,7 @@ export default function HeroSection() {
 
   useEffect(() => {
     const maxScroll = 700;
-    const minScale = 0.52;
+    const minScale = 0.5;
 
     const handleScroll = () => {
       const progress = Math.min(window.scrollY / maxScroll, 1);
@@ -102,7 +107,7 @@ export default function HeroSection() {
     return () => {
       isCancelled = true;
     };
-  }, [reduceMotion]);
+  }, [reduceMotion, headlineLines]);
 
   return (
     <div className="relative">
@@ -117,7 +122,7 @@ export default function HeroSection() {
           }}
         >
           <span className="text-white/40 tracking-[0.3em] text-md md:text-lg lg:text-xl uppercase font-bold">
-            DENECHE MOHAMED
+            {t("hero.name")}
           </span>
           <h1 className="flex flex-col items-center leading-[0.85] font-bold text-center tracking-tight">
             {headlineLines.map((line, index) => (
@@ -146,7 +151,7 @@ export default function HeroSection() {
             <div className="relative h-full w-full overflow-hidden rounded-[36px]">
               <Image
                 src="/Myself.png"
-                alt="Portrait"
+                alt={t("hero.portraitAlt")}
                 fill
                 className="object-cover"
                 priority
@@ -168,7 +173,7 @@ export default function HeroSection() {
               >
                 <Image
                   src={skill.icon}
-                  alt={skill.label}
+                  alt={t(skill.label)}
                   width={750}
                   height={750}
                   className="h-10 w-10 object-contain"
@@ -176,14 +181,14 @@ export default function HeroSection() {
                 <span
                   className={`translate-x-8 -translate-y-2 rounded-full px-7 py-3 text-xl font-semibold text-white shadow-[0_10px_25px_rgba(0,0,0,0.35)] ${skill.color}`}
                 >
-                  {skill.label}
+                  {t(skill.label)}
                 </span>
               </div>
             ))}
             <div className="absolute -bottom-5 -right-4 flex items-center gap-3 rounded-full bg-[#3A3A3A] px-6 py-3 shadow-[0_10px_25px_rgba(0,0,0,0.35)]">
               <Image
                 src="/Logo.png"
-                alt="Logo"
+                alt={t("hero.logoAlt")}
                 width={548}
                 height={548}
                 className="h-14 w-auto object-contain"
