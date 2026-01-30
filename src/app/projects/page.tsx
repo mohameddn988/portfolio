@@ -14,7 +14,7 @@ export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-primary">
       <SectionTitle
-        title="All Projects"
+        title="More Projects"
         backgroundText="PROJECTS"
         subtitle="A showcase of my work"
       />
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
               : "bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white border border-white/10"
           }`}
         >
-          ALL PROJECTS
+          PROJECTS
         </button>
         <button
           onClick={() => setFilter("featured")}

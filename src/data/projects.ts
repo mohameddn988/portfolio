@@ -286,14 +286,17 @@ export const projects: Project[] = [
   {
     id: "progix",
     title: "Progix",
-    description: "The Montreal-based software development agency where I worked. The site showcases our expertise in web and mobile development, AI, blockchain, and business systems, highlighting our team's capabilities and successful projects to attract potential clients.",
+    description:
+      "The Montreal-based software development agency where I worked. The site showcases our expertise in web and mobile development, AI, blockchain, and business systems, highlighting our team's capabilities and successful projects to attract potential clients.",
     tags: ["Web App", "Agency", "Software Development", "Business Services"],
     link: "https://www.progix.pro/",
     featured: false,
     year: "2025",
     role: "Fullstack Developer",
-    challenges: "Creating a professional website that represents the agency's diverse services and technical expertise while maintaining a modern, engaging design.",
-    solution: "Built a responsive Next.js website with detailed service sections, team profiles, case studies, and contact forms, effectively positioning Progix as a leading software development partner.",
+    challenges:
+      "Creating a professional website that represents the agency's diverse services and technical expertise while maintaining a modern, engaging design.",
+    solution:
+      "Built a responsive Next.js website with detailed service sections, team profiles, case studies, and contact forms, effectively positioning Progix as a leading software development partner.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     FeaturedCover: "/Project/Progix/logo.png",
     gallery: [
@@ -313,14 +316,17 @@ export const projects: Project[] = [
   {
     id: "conseilcm360",
     title: "Conseil CM360",
-    description: "A consulting firm specializing in treasury management optimization for businesses. The site was highly praised by the client for its design and functionality, showcasing their expertise in diagnostics, liquidity management, and cost optimization to attract clients seeking treasury solutions.",
+    description:
+      "A consulting firm specializing in treasury management optimization for businesses. The site was highly praised by the client for its design and functionality, showcasing their expertise in diagnostics, liquidity management, and cost optimization to attract clients seeking treasury solutions.",
     tags: ["Web App", "Consulting", "Treasury Management", "Business Services"],
     link: "https://www.conseilcm360.com/",
     featured: false,
     year: "2025",
     role: "Fullstack Developer",
-    challenges: "Implementing modals for the first time to enhance user interaction and display detailed service information dynamically.",
-    solution: "Successfully integrated modals into the website, creating an engaging user experience that was highly appreciated by the client.",
+    challenges:
+      "Implementing modals for the first time to enhance user interaction and display detailed service information dynamically.",
+    solution:
+      "Successfully integrated modals into the website, creating an engaging user experience that was highly appreciated by the client.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
     FeaturedCover: "/Project/CM360/logomobile.jpg",
     gallery: [
@@ -368,71 +374,43 @@ export const projects: Project[] = [
     FeaturedCover: "/Project/Humanicia/Logo.png",
   },
   {
-    id: "enseignesmediaprint",
-    title: "Enseignes Media Print",
-    description: "",
-    tags: [],
-    link: "https://www.enseignesmediaprint.com/",
-    featured: false,
-    year: "2025",
-    role: "Fullstack Developer",
-  },
-  {
-    id: "ags-globalfarm-sarl",
-    title: "AGS Global Farm SARL",
-    description: "",
-    tags: [],
-    link: "https://ags-globalfarm-sarl.vercel.app/",
-    featured: false,
-    year: "2025",
-    role: "Fullstack Developer",
-  },
-  {
     id: "cheminement",
     title: "Cheminement",
-    description: "",
-    tags: [],
+    description:
+      "An integrated mental health platform that connects users with qualified professionals for personalized care. The site features detailed service information, professional matching, and educational resources to support mental wellness journeys and provide accessible mental health support.",
+    tags: ["Web App", "Mental Health", "Healthcare", "Platform"],
     link: "https://cheminement.vercel.app/",
     featured: false,
     year: "2025",
     role: "Fullstack Developer",
-  },
-  {
-    id: "safyr-nine",
-    title: "Safyr Nine",
-    description:
-      "A modern web application for managing safyr nine services with advanced features and user-friendly interface.",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-    link: "https://safyr-nine.vercel.app/",
-    github: "https://github.com/username/safyr-nine",
-    features: [
-      "User authentication and authorization",
-      "Real-time data updates",
-      "Interactive dashboards",
-      "Mobile-responsive design",
-      "API integration",
-    ],
+    challenges:
+      "Creating an informative and trustworthy platform that clearly communicates mental health services and ensures user privacy and accessibility.",
+    solution:
+      "Built a responsive Next.js application with client and professional dashboards, database integration using MongoDB, and JWT authentication, providing a comprehensive platform for mental health support.",
     technologies: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
-      "Prisma",
-      "PostgreSQL",
+      "MongoDB",
+      "JWT",
+      "Stripe",
       "Vercel",
     ],
-    challenges:
-      "Implementing real-time features while maintaining performance and ensuring data security across multiple user sessions.",
-    solution:
-      "Utilized WebSockets for real-time communication, implemented JWT for secure authentication, and optimized database queries with proper indexing.",
-    year: "2025",
-    role: "Fullstack Developer",
+    FeaturedCover: "/Project/Cheminement/Logo.png",
     gallery: [
-      "/About/IDontKnow.png",
-      "/About/MyselfHackathon.png",
-      "/About/Myself.png",
-      "/About/IDontKnow.png",
-      "/About/MyselfHackathon.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115533.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115553.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115610.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115650.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115737.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115756.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115809.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115826.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115849.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115906.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115924.png",
+      "/Project/Cheminement/Screenshot 2026-01-30 115947.png",
     ],
-    featured: false,
   },
+
 ];
