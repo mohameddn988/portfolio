@@ -4,6 +4,9 @@ import { useEffect, useState, useMemo, type CSSProperties } from "react";
 import Image from "next/image";
 import { skills } from "../../data/skills";
 import { useI18n } from "@/i18n/useI18n";
+import BlueBananaIcon from "../ui/BlueBananaIcon";
+import PurpleBananaIcon from "../ui/PurpleBananaIcon";
+import GreenBananaIcon from "../ui/GreenBananaIcon";
 
 export default function HeroSection() {
   const [heroScale, setHeroScale] = useState(1);
@@ -166,13 +169,15 @@ export default function HeroSection() {
                   } as CSSProperties
                 }
               >
-                <Image
-                  src={skill.icon}
-                  alt={t(skill.label)}
-                  width={750}
-                  height={750}
-                  className="h-10 w-10 object-contain"
-                />
+                {skill.label === "Web Dev" && (
+                  <BlueBananaIcon className="h-10 w-10" />
+                )}
+                {skill.label === "Mobile Dev" && (
+                  <PurpleBananaIcon className="h-10 w-10" />
+                )}
+                {skill.label === "Cloud & DevOps" && (
+                  <GreenBananaIcon className="h-10 w-10" />
+                )}
                 <span
                   className={`translate-x-8 -translate-y-2 rounded-full px-7 py-3 text-xl font-semibold text-white shadow-[0_10px_25px_rgba(0,0,0,0.35)] ${skill.color}`}
                 >

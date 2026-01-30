@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import CustomCursorIcon from "./CustomCursorIcon";
 
 interface CursorPosition {
   x: number;
@@ -64,11 +64,10 @@ export default function CustomCursor() {
         opacity: isVisible ? 1 : 0,
       }}
     >
-      <Image
-        src="/Cursor/CustomCursor.svg"
-        alt=""
+      <CustomCursorIcon
         width={CURSOR_SIZE}
         height={CURSOR_SIZE}
+        style={{ width: CURSOR_SIZE, height: CURSOR_SIZE }}
       />
     </div>
   );
