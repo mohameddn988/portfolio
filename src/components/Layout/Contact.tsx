@@ -20,13 +20,15 @@ export default function Contact() {
         {/* CTA Buttons */}
         <div className="flex gap-6 mb-10 px-16 md:px-24 lg:px-32">
           <Link
-            href="#book-call"
+            href="https://wa.me/213665954002"
+            target="_blank"
             className="px-8 py-4 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-colors text-lg font-medium"
           >
             Message Me
           </Link>
           <Link
-            href="mailto:your.email@example.com"
+            href="mailto:msideneche@gmail.com"
+            
             className="px-8 py-4 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-colors text-lg font-medium"
           >
             Email Me
@@ -49,7 +51,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-16 md:px-24 lg:px-32">
           {/* LinkedIn */}
           <Link
-            href="https://www.linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/mohamed-deneche/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
@@ -66,7 +68,7 @@ export default function Contact() {
             </div>
             <div>
               <h4 className="text-[#e4e4e7] font-semibold text-lg mb-1 tracking-wider capitalize">
-                YEFICHLARA
+                Mohamed Deneche
               </h4>
               <p className="text-white/60 text-sm">
                 Check out my resume and let&apos;s connect
@@ -76,7 +78,7 @@ export default function Contact() {
 
           {/* Instagram */}
           <Link
-            href="https://www.instagram.com/your-profile"
+            href="https://www.instagram.com/mohamed._dn"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
@@ -93,7 +95,7 @@ export default function Contact() {
             </div>
             <div>
               <h4 className="text-[#e4e4e7] font-semibold text-lg mb-1 tracking-wider capitalize">
-                @YEFICHLARAS
+                @mohamed._dn
               </h4>
               <p className="text-white/60 text-sm">
                 Its private but i can make and exception for you 😉
@@ -103,7 +105,7 @@ export default function Contact() {
 
           {/* GitHub */}
           <Link
-            href="https://github.com/your-profile"
+            href="https://github.com/mohameddn988"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
@@ -120,7 +122,7 @@ export default function Contact() {
             </div>
             <div>
               <h4 className="text-[#e4e4e7] font-semibold text-lg mb-1 tracking-wider capitalize">
-                YEFICHLARA
+                mohameddn988
               </h4>
               <p className="text-white/60 text-sm">
                 Explore my projects and code repositories

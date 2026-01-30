@@ -14,9 +14,8 @@ const WorkExperienceSection = () => {
               WORK EXPERIENCE
             </h2>
             <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/Deneche_Mohamed_CV.pdf"
+              download="Deneche_Mohamed_CV.pdf"
               className="inline-flex items-center gap-2 text-secondary hover:text-secondary/80 transition-colors font-semibold text-xl group w-fit"
             >
               View resume
@@ -43,7 +42,7 @@ const WorkExperienceSection = () => {
                             <img
                               src={experience.logo}
                               alt={experience.company}
-                              className="w-10 h-10 object-contain"
+                              className={`object-contain filter brightness-0 invert w-full ${experience.height}`}
                             />
                           ) : (
                             <span className="text-2xl font-bold text-white/20">

@@ -66,7 +66,7 @@ export default function AboutPage() {
               {/* Quick Stats */}
               <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary">19+</div>
+                  <div className="text-3xl font-bold text-secondary">15+</div>
                   <div className="text-sm text-zinc-500 mt-1">Projects</div>
                 </div>
                 <div className="text-center">
@@ -74,7 +74,7 @@ export default function AboutPage() {
                   <div className="text-sm text-zinc-500 mt-1">Months Exp</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary">50+</div>
+                  <div className="text-3xl font-bold text-secondary">20+</div>
                   <div className="text-sm text-zinc-500 mt-1">
                     Contributions
                   </div>

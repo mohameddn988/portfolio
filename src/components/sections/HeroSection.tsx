@@ -35,8 +35,8 @@ export default function HeroSection() {
     // Initialize gentle floating offsets per skill (fixed values)
     const xOffsets = [10, -8, 12, -10, 9, -7, 11, -9];
     const yOffsets = [-7, 9, -10, 8, -9, 11, -6, 10];
-    const durations = [6.2, 7.4, 5.8, 7.1, 6.7, 8.0, 6.0, 7.8];
-    const delays = [0, 0.6, 1.2, 0.3, 0.9, 0.5, 1.5, 0.2];
+    const durations = [3.2, 2.8, 3.0];
+    const delays = [0, 0.2, 0.1];
 
     const initialOffsets: Record<
       string,

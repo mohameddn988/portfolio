@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const pathname = usePathname();
-  
+
   return (
     <header className="sticky top-0 left-0 right-0 z-50 bg-transparent">
       <div className="max-w-7xl mx-auto px-8">
@@ -24,14 +24,16 @@ export default function Header() {
               className="w-auto h-15"
               priority
             />
-          </Link>
+</Link>
 
           {/* Navigation */}
           <nav className="flex items-center gap-20 backdrop-blur-md px-14 py-5 rounded-full">
             <Link
               href="/"
               className={`transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
-                pathname === '/' ? 'text-secondary' : 'text-white/90 hover:text-secondary'
+                pathname === "/"
+                  ? "text-secondary"
+                  : "text-white/90 hover:text-secondary"
               }`}
             >
               HOME
@@ -39,7 +41,9 @@ export default function Header() {
             <Link
               href="/projects"
               className={`transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
-                pathname === '/projects' || pathname?.startsWith('/projects/') ? 'text-secondary' : 'text-white/90 hover:text-secondary'
+                pathname === "/projects" || pathname?.startsWith("/projects/")
+                  ? "text-secondary"
+                  : "text-white/90 hover:text-secondary"
               }`}
             >
               PROJECTS
@@ -47,7 +51,9 @@ export default function Header() {
             <Link
               href="/about"
               className={`transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
-                pathname === '/about' ? 'text-secondary' : 'text-white/90 hover:text-secondary'
+                pathname === "/about"
+                  ? "text-secondary"
+                  : "text-white/90 hover:text-secondary"
               }`}
             >
               ABOUT
@@ -87,9 +93,9 @@ export default function Header() {
               </svg>
             </button>
             <Link
-              href="#contact"
+              href="mailto:msideneche@gmail.com"
               className="text-white/80 hover:text-secondary transition-colors"
-              aria-label="Contact"
+              aria-label="Email"
             >
               <svg
                 width="40"
@@ -117,7 +123,7 @@ export default function Header() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </Link>
+              </Link>
           </div>
         </div>
       </div>
