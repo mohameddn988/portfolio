@@ -14,7 +14,7 @@ export const workExperiences: WorkExperience[] = [
     role: "workExperience.progix.role",
     period: "workExperience.progix.period",
     logo: "/WorkExperience/Progix.svg",
-    height: "h-12",
+    height: "h-[2.4rem]",
   },
   {
     id: "freelancer",
@@ -22,6 +22,6 @@ export const workExperiences: WorkExperience[] = [
     role: "workExperience.freelancer.role",
     period: "workExperience.freelancer.period",
     logo: "Logo.png",
-    height: "h-12",
+    height: "h-[2.4rem]",
   },
 ];

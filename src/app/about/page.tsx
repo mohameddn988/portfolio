@@ -21,7 +21,7 @@ export default function AboutPage() {
   const { t } = useI18n();
 
   return (
-    <main className="min-h-screen bg-primary px-16 md:px-24 lg:px-32">
+    <main className="min-h-screen bg-primary px-[3.2rem] md:px-[4.8rem] lg:px-[6.4rem]">
       <SectionTitle
         title={t("about.title")}
         backgroundText="HELLO"
@@ -29,54 +29,60 @@ export default function AboutPage() {
       />
 
       {/* Bio Section */}
-      <section className="max-w-355 mx-auto px-4 md:px-6 mt-10">
+      <section className="px-[3.2rem] md:px-[4.8rem] lg:px-[6.4rem] mt-8">
         <div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-y-12 lg:gap-x-6 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[1.6rem] lg:gap-y-[2.4rem] lg:gap-x-[1.2rem] items-start">
             {/* Left Column - Bio Text */}
-            <div className="space-y-6 lg:col-span-1">
+            <div className="space-y-[1.2rem] lg:col-span-1">
               <div>
-                <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                <h2 className="text-[2rem] md:text-[2.2rem] font-bold text-white mb-[0.8rem]">
                   {t("about.greeting")}{" "}
                   <span className="text-secondary">{t("about.name")}</span>
                 </h2>
-                <p className="text-xl text-zinc-400 font-light">
+                <p className="text-[1rem] text-zinc-400 font-light">
                   {t("about.role")}
                 </p>
               </div>
 
-              <div className="space-y-4 text-zinc-300 leading-relaxed text-justify">
+              <div className="space-y-[0.8rem] text-zinc-300 leading-relaxed text-justify min-h-88">
                 <p>{t("about.bio1")}</p>
                 <p>{t("about.bio2")}</p>
                 <p>{t("about.bio3")}</p>
               </div>
 
               {/* Quick Stats */}
-              <div className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10">
+              <div className="grid grid-cols-3 gap-[0.8rem] pt-[1.2rem] border-t border-white/10">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary">15+</div>
-                  <div className="text-sm text-zinc-500 mt-1">
+                  <div className="text-[1.5rem] font-bold text-secondary">
+                    15+
+                  </div>
+                  <div className="text-[0.7rem] text-zinc-500 mt-[0.2rem]">
                     {t("about.stats.projects")}
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary">6+</div>
-                  <div className="text-sm text-zinc-500 mt-1">
+                  <div className="text-[1.5rem] font-bold text-secondary">
+                    6+
+                  </div>
+                  <div className="text-[0.7rem] text-zinc-500 mt-[0.2rem]">
                     {t("about.stats.experience")}
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-secondary">20+</div>
-                  <div className="text-sm text-zinc-500 mt-1">
+                  <div className="text-[1.5rem] font-bold text-secondary">
+                    20+
+                  </div>
+                  <div className="text-[0.7rem] text-zinc-500 mt-[0.2rem]">
                     {t("about.stats.contributions")}
                   </div>
                 </div>
               </div>
             </div>
             {/* Right Column - Images */}
-            <div className="space-y-6 lg:col-span-1 self-center">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+            <div className="space-y-[1.2rem] lg:col-span-1 self-center">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-[0.8rem] items-center">
                 {/* Left inside images block: square image */}
-                <div className="relative w-55 h-55 aspect-square justify-self-end rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-primary z-70">
+                <div className="relative w-44 h-44 aspect-square justify-self-end rounded-[0.8rem] overflow-hidden border border-white/10 shadow-xl bg-primary z-56">
                   <Image
                     src="/About/Myself.png"
                     alt="Myself - Profile"
@@ -87,9 +93,9 @@ export default function AboutPage() {
                 </div>
 
                 {/* Right inside images block: stacked images */}
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-[0.8rem]">
                   {/* Top-right: rectangle with same height as left image */}
-                  <div className="relative w-75 h-55 rounded-2xl overflow-hidden border border-white/10 shadow-lg bg-primary z-70">
+                  <div className="relative w-60 h-44 rounded-[0.8rem] overflow-hidden border border-white/10 shadow-lg bg-primary z-56">
                     <Image
                       src="/About/MyselfHackathon.png"
                       alt="Myself - Work"
@@ -99,7 +105,7 @@ export default function AboutPage() {
                   </div>
 
                   {/* Bottom-right: same size as left image and aligned to start */}
-                  <div className="relative w-55 h-55 self-start rounded-2xl overflow-hidden border border-white/10 shadow-lg bg-primary z-70">
+                  <div className="relative w-44 h-44 self-start rounded-[0.8rem] overflow-hidden border border-white/10 shadow-lg bg-primary z-56">
                     <Image
                       src="/About/IDontKnow.png"
                       alt="Myself - Passion"
@@ -120,7 +126,7 @@ export default function AboutPage() {
         subtitle={t("skills.subtitle")}
         backgroundText="SKILLS"
       />
-      <section className="max-w-250 mx-auto px-4 md:px-6 -mt-16 pb-16">
+      <section className="px-[3.2rem] md:px-[4.8rem] lg:px-[6.4rem] -mt-[3.2rem] pb-[3.2rem]">
         <div className="flex justify-center">
           <Suspense
             fallback={
@@ -139,27 +145,27 @@ export default function AboutPage() {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-20 items-start">
             {/* Left Column - Title (Sticky) */}
-            <div className="flex flex-col justify-start sticky top-35 md:col-span-2">
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+            <div className="flex flex-col justify-start sticky top-28 md:col-span-2">
+              <h2 className="text-5xl md:text-6xl lg:text-6xl font-bold text-white mb-6">
                 {t("about.achievementsTitle")}
               </h2>
-              <div className="h-[1vh]"></div>
+              <div className="h-[11vh]"></div>
             </div>
 
             {/* Right Column - Achievements List */}
             <div className="md:col-span-3">
-              <div className="space-y-12">
+              <div className="space-y-[2.4rem]">
                 {achievements.map((achievement, index) => (
                   <div
                     key={index}
-                    className={`sticky bg-primary top-35 z-[${index + 1}]`}
+                    className={`sticky bg-primary top-28 z-[${index + 1}]`}
                   >
-                    <div className="bg-linear-to-br from-[#1a1a1d] to-[#0f0f11] border border-white/10 rounded-3xl p-5 md:p-6">
-                      <div className="flex gap-8 items-center">
+                    <div className="bg-linear-to-br from-[#1a1a1d] to-[#0f0f11] border border-white/10 rounded-[0.8rem] p-4 md:p-[1.2rem]">
+                      <div className="flex gap-[1.6rem] items-center">
                         {/* Year */}
                         <div className="shrink-0">
-                          <div className="w-20 h-20 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center">
-                            <span className="text-2xl font-bold text-secondary/50">
+                          <div className="w-16 h-16 bg-white/5 border border-white/10 rounded-[0.8rem] flex items-center justify-center">
+                            <span className="text-[1.2rem] font-bold text-secondary/50">
                               {achievement.year}
                             </span>
                           </div>
@@ -167,11 +173,11 @@ export default function AboutPage() {
 
                         {/* Content */}
                         <div className="flex-1">
-                          <h3 className="text-3xl font-bold text-white mb-2">
+                          <h3 className="text-[1.5rem] font-bold text-white mb-[0.4rem]">
                             {t(achievement.title)}
                           </h3>
-                          <div className="min-h-32">
-                            <p className="text-base text-zinc-400 line-clamp-5 text-justify">
+                          <div className="min-h-[6.4rem]">
+                            <p className="text-[0.8rem] text-zinc-400 line-clamp-5 text-justify">
                               {t(achievement.description)}
                             </p>
                           </div>
@@ -180,7 +186,7 @@ export default function AboutPage() {
                     </div>
                   </div>
                 ))}
-                <div className="h-[4vh]"></div>
+                <div className="h-[3vh]"></div>
               </div>
             </div>
           </div>

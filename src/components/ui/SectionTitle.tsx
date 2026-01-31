@@ -15,7 +15,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 }) => {
   return (
     <div
-      className={`relative w-full py-20 md:py-32 overflow-hidden flex flex-col items-start justify-center ${className}`}
+      className={`relative w-full py-16 md:py-[6.4rem] overflow-hidden flex flex-col items-start justify-center ${className}`}
     >
       {/* Background Text */}
       <span
@@ -26,14 +26,14 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
       </span>
 
       {/* Foreground Content */}
-      <div className="relative z-10 text-left flex flex-col items-start justify-center gap-3 md:gap-4 px-16 md:px-24 lg:px-32">
+      <div className="relative z-10 text-left flex flex-col items-start justify-center gap-[0.2rem] md:gap-[0.4rem] px-[3.2rem] md:px-[4.8rem] lg:px-[6.4rem]">
         {title && (
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#e4e4e7] tracking-wider capitalize">
+          <h2 className="text-[1.8rem] md:text-[2.4rem] lg:text-[3rem] font-semibold text-[#e4e4e7] tracking-wider capitalize">
             {title}
           </h2>
         )}
         {subtitle && (
-          <p className="text-sm md:text-lg text-[#a1a1aa] flex items-center gap-2 font-light">
+          <p className="text-[0.7rem] md:text-[0.9rem] text-[#a1a1aa] flex items-center gap-2 font-light">
             {subtitle}
           </p>
         )}

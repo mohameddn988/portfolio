@@ -9,27 +9,27 @@ export default function Contact() {
   const { t } = useI18n();
 
   return (
-    <section className="py-32 bg-primary">
+    <section className="py-26 bg-primary">
       <div className="">
         {/* Main Heading */}
-        <div className="mb-16 px-16 md:px-24 lg:px-32">
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+        <div className="mb-13 px-13 md:px-19 lg:px-26">
+          <h2 className="text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] font-bold text-white leading-tight">
             {t("contact.mainHeading")}
           </h2>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex gap-6 mb-10 px-16 md:px-24 lg:px-32">
+        <div className="flex gap-5 mb-8 px-13 md:px-19 lg:px-26">
           <Link
             href="https://wa.me/213665954002"
             target="_blank"
-            className="px-8 py-4 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-colors text-lg font-medium"
+            className="px-6 py-3 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-colors text-base font-medium"
           >
             {t("contact.messageMe")}
           </Link>
           <Link
             href="mailto:msideneche@gmail.com"
-            className="px-8 py-4 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-colors text-lg font-medium"
+            className="px-6 py-3 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-colors text-base font-medium"
           >
             {t("contact.emailMe")}
           </Link>
@@ -42,23 +42,23 @@ export default function Contact() {
           subtitle={
             <>
               {t("contact.sectionTitle.subtitle")}{" "}
-              <ArrowDown className="inline w-4 h-4" />
+              <ArrowDown className="inline w-3 h-3" />
             </>
           }
         />
 
         {/* Social Links Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-16 md:px-24 lg:px-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-13 md:px-19 lg:px-26">
           {/* LinkedIn */}
           <Link
             href="https://www.linkedin.com/in/mohamed-deneche/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
+            className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
           >
-            <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+            <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
               <svg
-                className="w-6 h-6 text-white"
+                className="w-5 h-5 text-white"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,10 +67,10 @@ export default function Contact() {
               </svg>
             </div>
             <div>
-              <h4 className="text-[#e4e4e7] font-semibold text-lg mb-1 tracking-wider capitalize">
+              <h4 className="text-[#e4e4e7] font-semibold text-base mb-1 tracking-wider capitalize">
                 {t("contact.social.linkedin.name")}
               </h4>
-              <p className="text-white/60 text-sm">
+              <p className="text-white/60 text-xs">
                 {t("contact.social.linkedin.description")}
               </p>
             </div>
@@ -81,11 +81,11 @@ export default function Contact() {
             href="https://www.instagram.com/mohamed._dn"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
+            className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
           >
-            <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+            <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
               <svg
-                className="w-6 h-6 text-white"
+                className="w-5 h-5 text-white"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,10 +94,10 @@ export default function Contact() {
               </svg>
             </div>
             <div>
-              <h4 className="text-[#e4e4e7] font-semibold text-lg mb-1 tracking-wider capitalize">
+              <h4 className="text-[#e4e4e7] font-semibold text-base mb-1 tracking-wider capitalize">
                 {t("contact.social.instagram.name")}
               </h4>
-              <p className="text-white/60 text-sm">
+              <p className="text-white/60 text-xs">
                 {t("contact.social.instagram.description")}
               </p>
             </div>
@@ -108,11 +108,11 @@ export default function Contact() {
             href="https://github.com/mohameddn988"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
+            className="flex items-start gap-4 p-5 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
           >
-            <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+            <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
               <svg
-                className="w-6 h-6 text-white"
+                className="w-5 h-5 text-white"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -121,10 +121,10 @@ export default function Contact() {
               </svg>
             </div>
             <div>
-              <h4 className="text-[#e4e4e7] font-semibold text-lg mb-1 tracking-wider capitalize">
+              <h4 className="text-[#e4e4e7] font-semibold text-base mb-1 tracking-wider capitalize">
                 {t("contact.social.github.name")}
               </h4>
-              <p className="text-white/60 text-sm">
+              <p className="text-white/60 text-xs">
                 {t("contact.social.github.description")}
               </p>
             </div>

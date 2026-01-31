@@ -22,10 +22,10 @@ export default function ProjectsPage() {
       />
 
       {/* Filter Buttons */}
-      <div className="max-w-250 mx-auto px-4 md:px-6 mt-10 flex justify-center gap-4">
+      <div className="max-w-200 mx-auto px-[0.8rem] md:px-[1.2rem] mt-8 flex justify-center gap-[0.8rem]">
         <button
           onClick={() => setFilter("all")}
-          className={`w-36 px-6 py-2.5 rounded-full text-sm font-bold tracking-wider transition-all ${
+          className={`w-[7.2rem] px-[1.2rem] py-2 rounded-full text-[0.6rem] font-extrabold tracking-wider transition-all ${
             filter === "all"
               ? "bg-secondary text-primary shadow-lg shadow-secondary/50"
               : "bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white border border-white/10"
@@ -35,7 +35,7 @@ export default function ProjectsPage() {
         </button>
         <button
           onClick={() => setFilter("featured")}
-          className={`w-36 px-6 py-2.5 rounded-full text-sm font-bold tracking-wider transition-all ${
+          className={`w-[7.2rem] px-[1.2rem] py-2 rounded-full text-[0.6rem] font-bold tracking-wider transition-all ${
             filter === "featured"
               ? "bg-secondary text-primary shadow-lg shadow-secondary/50"
               : "bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white border border-white/10"
@@ -46,25 +46,25 @@ export default function ProjectsPage() {
       </div>
 
       {/* Projects Grid */}
-      <div className="max-w-350 mx-auto px-4 md:px-6 mt-12 pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-280 mx-auto px-[0.8rem] md:px-[1.2rem] mt-[2.4rem] pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.6rem]">
           {filteredProjects.map((project) => (
             <Link
               key={project.id}
               href={`/projects/${project.id}`}
-              className="group relative bg-linear-to-br from-[#1a1a1d] to-[#0f0f11] rounded-2xl p-6 border border-white/8 hover:border-secondary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-secondary/20 hover:-translate-y-1 flex flex-col min-h-125"
+              className="group relative bg-linear-to-br from-[#1a1a1d] to-[#0f0f11] rounded-[0.8rem] p-[1.2rem] border border-white/8 hover:border-secondary/50 transition-all duration-300 hover:shadow-2xl hover:shadow-secondary/20 hover:-translate-y-1 flex flex-col min-h-100"
             >
               {/* Featured Badge */}
               {project.featured && (
-                <div className="absolute top-4 right-4 z-10">
-                  <span className="bg-secondary text-primary text-xs font-bold px-3 py-1 rounded-full">
+                <div className="absolute top-[0.8rem] right-[0.8rem] z-10">
+                  <span className="bg-secondary text-primary text-[0.6rem] font-bold px-[0.6rem] py-[0.2rem] rounded-full">
                     {t("projectDetail.featured")}
                   </span>
                 </div>
               )}
 
               {/* Project Image */}
-              <div className="relative w-full aspect-16/8 rounded-xl overflow-hidden mb-5 shadow-lg">
+              <div className="relative w-full aspect-16/8 rounded-xl overflow-hidden mb-4 shadow-lg">
                 {project.gallery && project.gallery[0] ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
@@ -100,47 +100,47 @@ export default function ProjectsPage() {
               {/* Project Info */}
               <div className="flex flex-col grow">
                 {/* Title - Fixed height for 1 line */}
-                <div className="min-h-12 mb-3">
-                  <h3 className="text-2xl font-bold text-white group-hover:text-secondary transition-colors line-clamp-1 leading-tight">
+                <div className="min-h-[2.4rem] mb-[0.6rem]">
+                  <h3 className="text-[1.2rem] font-bold text-white group-hover:text-secondary transition-colors line-clamp-1 leading-tight">
                     {t(project.title)}
                   </h3>
                 </div>
 
                 {/* Description - Fixed height for 3 lines */}
-                <div className="min-h-16 mb-4">
-                  <p className="text-zinc-400 text-sm line-clamp-3 leading-relaxed text-justify">
+                <div className="min-h-[3.2rem] mb-[0.8rem]">
+                  <p className="text-zinc-400 text-[0.7rem] line-clamp-3 leading-relaxed text-justify">
                     {t(project.description)}
                   </p>
                 </div>
 
                 {/* Tags */}
-                <div className="flex gap-2 mb-4 overflow-hidden">
+                <div className="flex gap-[0.4rem] mb-[0.8rem] overflow-hidden">
                   {project.tags
                     .sort((a, b) => t(a).length - t(b).length)
                     .slice(0, 2)
                     .map((tag, index) => (
                       <span
                         key={index}
-                        className="text-xs font-semibold text-zinc-500 bg-white/5 px-3 py-1 rounded-full border border-white/10 whitespace-nowrap"
+                        className="text-[0.6rem] font-semibold text-zinc-500 bg-white/5 px-[0.6rem] py-[0.2rem] rounded-full border border-white/10 whitespace-nowrap"
                       >
                         {t(tag)}
                       </span>
                     ))}
                   {project.tags.length > 2 && (
-                    <span className="text-xs font-semibold text-zinc-500 bg-white/5 px-3 py-1 rounded-full border border-white/10 whitespace-nowrap">
+                    <span className="text-[0.6rem] font-semibold text-zinc-500 bg-white/5 px-[0.6rem] py-[0.2rem] rounded-full border border-white/10 whitespace-nowrap">
                       +{project.tags.length - 2}
                     </span>
                   )}
                 </div>
 
                 {/* Year and Role */}
-                <div className="flex items-center gap-4 mb-4 text-xs text-zinc-500">
+                <div className="flex items-center gap-[0.8rem] mb-[0.8rem] text-[0.6rem] text-zinc-500">
                   {project.year && (
                     <span className="flex items-center gap-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
+                        width="1.12rem"
+                        height="1.12rem"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
@@ -167,8 +167,8 @@ export default function ProjectsPage() {
                     <span className="flex items-center gap-1">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="14"
-                        height="14"
+                        width="1.12rem"
+                        height="1.12rem"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
@@ -187,13 +187,13 @@ export default function ProjectsPage() {
                 </div>
 
                 {/* View Details Link - Always at bottom */}
-                <div className="mt-auto pt-3">
-                  <span className="text-secondary/80 text-xs font-bold tracking-[0.3em] uppercase group-hover:text-secondary transition-colors inline-flex items-center gap-2">
+                <div className="mt-auto pt-[0.6rem]">
+                  <span className="text-secondary/80 text-[0.6rem] font-bold tracking-[0.3em] uppercase group-hover:text-secondary transition-colors inline-flex items-center gap-[0.4rem]">
                     {t("projects.viewDetails")}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="14"
-                      height="14"
+                      width="1.12rem"
+                      height="1.12rem"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
@@ -214,8 +214,8 @@ export default function ProjectsPage() {
 
         {/* Empty State */}
         {filteredProjects.length === 0 && (
-          <div className="text-center py-20">
-            <p className="text-zinc-500 text-lg">
+          <div className="text-center py-16">
+            <p className="text-zinc-500 text-[0.9rem]">
               {t("projects.noProjectsFound")}
             </p>
           </div>

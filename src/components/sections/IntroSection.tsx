@@ -6,18 +6,18 @@ const IntroSection = () => {
   const { t } = useI18n();
 
   return (
-    <section className="h-[60vh] flex flex-col justify-center px-16 md:px-24 lg:px-32 bg-(--bg-primary) text-(--color-text-primary)">
+    <section className="h-[48vh] mt-[2.4rem] flex flex-col justify-center px-[3.2rem] md:px-[4.8rem] lg:px-[6.4rem] bg-(--bg-primary) text-(--color-text-primary)">
       <div className="w-full">
-        <div className="flex items-center gap-3 mb-8">
-          <span className="text-4xl tracking-[0.2em] text-[#71717a] font-medium uppercase">
+        <div className="flex items-center gap-[0.6rem] mb-[1.2rem]">
+          <span className="text-[1.8rem] tracking-[0.16em] text-[#71717a] font-medium uppercase">
             {t("intro.greeting")}
           </span>
-          <span className="text-4xl animate-wave origin-bottom-right inline-block">
+          <span className="text-[1.8rem] animate-wave origin-bottom-right inline-block">
             👋
           </span>
         </div>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-[1.1] tracking-tight text-white block w-full min-h-90 text-justify line-clamp-4">
+        <h1 className="text-[1.8rem] md:text-[3rem] lg:text-[3.6rem] font-normal leading-[1.1] tracking-tight text-white block w-full min-h-72 text-justify line-clamp-4">
           {t("intro.description")}
         </h1>
       </div>

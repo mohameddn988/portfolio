@@ -32,15 +32,15 @@ export default function ProjectDetailPage({
   return (
     <div className="min-h-screen bg-primary">
       {/* Hero Section */}
-      <section className="relative py-20 px-4 md:px-8 overflow-hidden">
-        <div className="max-w-6xl mx-auto">
+      <section className="relative py-16 px-[0.8rem] md:px-[1.6rem] overflow-hidden">
+        <div className="max-w-[57.6rem] mx-auto">
           {/* Back Button */}
           <Link
             href="/projects"
-            className="inline-flex items-center gap-2 text-zinc-400 hover:text-secondary transition-colors mb-12 group"
+            className="inline-flex items-center gap-[0.4rem] text-zinc-400 hover:text-secondary transition-colors mb-[2.4rem] group"
           >
             <svg
-              className="w-5 h-5 transition-transform group-hover:-translate-x-1"
+              className="w-4 h-4 transition-transform group-hover:-translate-x-1"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -55,19 +55,19 @@ export default function ProjectDetailPage({
             {t("projectDetail.backToProjects")}
           </Link>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-[1.8rem] md:text-[3rem] font-bold text-white mb-[1.2rem]">
             {t(project.title)}
           </h1>
 
-          <p className="text-xl md:text-2xl text-zinc-400 leading-relaxed max-w-4xl text-justify">
+          <p className="text-[1rem] md:text-[1.2rem] text-zinc-400 leading-relaxed max-w-184 text-justify min-h-62">
             {t(project.description)}
           </p>
 
           {/* Meta Info */}
-          <div className="flex flex-wrap gap-8 mt-8 text-sm">
+          <div className="flex flex-wrap gap-[1.6rem] mt-[1.6rem] text-[0.8rem]">
             {project.year && (
               <div>
-                <span className="text-zinc-500 block mb-1">
+                <span className="text-zinc-500 block mb-[0.2rem]">
                   {t("projectDetail.year")}
                 </span>
                 <span className="text-white font-medium">{project.year}</span>
@@ -75,7 +75,7 @@ export default function ProjectDetailPage({
             )}
             {project.role && (
               <div>
-                <span className="text-zinc-500 block mb-1">
+                <span className="text-zinc-500 block mb-[0.2rem]">
                   {t("projectDetail.role")}
                 </span>
                 <span className="text-white font-medium">
@@ -86,13 +86,13 @@ export default function ProjectDetailPage({
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap gap-4 mt-8">
+          <div className="flex flex-wrap gap-[0.8rem] mt-[1.6rem]">
             {project.link && (
               <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-white font-semibold transition-all hover:scale-105"
+                className="px-[1.6rem] py-[0.8rem] bg-white/10 hover:bg-white/20 border border-white/20 rounded-full text-white font-semibold text-[0.8rem] transition-all hover:scale-105"
               >
                 {t("projectDetail.visitLiveSite")}
               </a>
@@ -102,10 +102,10 @@ export default function ProjectDetailPage({
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-white font-semibold transition-all hover:scale-105 flex items-center gap-2"
+                className="px-[1.2rem] py-[0.6rem] bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-white font-semibold text-[0.8rem] transition-all hover:scale-105 flex items-center gap-[0.4rem]"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -120,8 +120,8 @@ export default function ProjectDetailPage({
 
       {/* Project Image */}
       {mainImage && (
-        <section className="px-4 md:px-8 mb-20">
-          <div className="max-w-6xl mx-auto">
+        <section className="px-[0.8rem] md:px-[1.6rem] mb-16">
+          <div className="max-w-[57.6rem] mx-auto">
             <div className="relative w-full aspect-16/8 rounded-3xl overflow-hidden shadow-2xl cursor-pointer bg-primary">
               <Image
                 src={mainImage}
@@ -136,12 +136,12 @@ export default function ProjectDetailPage({
 
       {/* Gallery */}
       {project.gallery && project.gallery.length > 0 && (
-        <section className="px-4 md:px-8 mb-20">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+        <section className="px-[0.8rem] md:px-[1.6rem] mb-16">
+          <div className="max-w-[57.6rem] mx-auto">
+            <h2 className="text-[1.5rem] md:text-[1.8rem] font-bold text-white mb-[1.6rem]">
               {t("projectDetail.projectGallery")}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.2rem]">
               {project.gallery.map((image, index) => (
                 <div
                   key={index}
@@ -164,20 +164,20 @@ export default function ProjectDetailPage({
 
       {/* Features */}
       {project.features && project.features.length > 0 && (
-        <section className="px-4 md:px-8 mb-20">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+        <section className="px-[0.8rem] md:px-[1.6rem] mb-16">
+          <div className="max-w-[44.8rem] mx-auto">
+            <h2 className="text-[1.5rem] md:text-[1.8rem] font-bold text-white mb-[1.6rem]">
               {t("projectDetail.keyFeatures")}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[0.8rem]">
               {project.features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-3 p-4 bg-white/5 border border-white/10 rounded-xl"
+                  className="flex items-start gap-[0.6rem] p-[0.8rem] bg-white/5 border border-white/10 rounded-xl"
                 >
-                  <div className="w-6 h-6 rounded-full bg-[#a78bfa]/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-[1.2rem] h-[1.2rem] rounded-full bg-[#a78bfa]/20 flex items-center justify-center shrink-0 mt-0.5">
                     <svg
-                      className="w-4 h-4 text-[#a78bfa]"
+                      className="w-[0.8rem] h-[0.8rem] text-[#a78bfa]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -200,16 +200,16 @@ export default function ProjectDetailPage({
 
       {/* Technologies */}
       {project.technologies && project.technologies.length > 0 && (
-        <section className="px-4 md:px-8 mb-20">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
+        <section className="px-[0.8rem] md:px-[1.6rem] mb-16">
+          <div className="max-w-[44.8rem] mx-auto">
+            <h2 className="text-[1.5rem] md:text-[1.8rem] font-bold text-white mb-[1.6rem]">
               {t("projectDetail.technologiesUsed")}
             </h2>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-[0.6rem]">
               {project.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="px-5 py-3 bg-linear-to-br from-[#a78bfa]/20 to-[#7c3aed]/20 border border-[#a78bfa]/30 rounded-lg text-white font-medium"
+                  className="px-[0.8rem] py-[0.4rem] bg-linear-to-br from-[#a78bfa]/20 to-[#7c3aed]/20 border border-[#a78bfa]/30 rounded-lg text-white font-medium text-[0.8rem]"
                 >
                   {tech}
                 </span>
@@ -221,15 +221,15 @@ export default function ProjectDetailPage({
 
       {/* Challenges & Solution */}
       {(project.challenges || project.solution) && (
-        <section className="px-4 md:px-8 mb-20">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section className="px-[0.8rem] md:px-[1.6rem] mb-16">
+          <div className="max-w-[44.8rem] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[1.6rem]">
               {project.challenges && (
-                <div className="p-8 bg-white/5 border border-white/10 rounded-2xl">
-                  <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                    <span className="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center">
+                <div className="p-[1.6rem] bg-white/5 border border-white/10 rounded-2xl">
+                  <h3 className="text-[1.5rem] font-bold text-white mb-[0.4rem] flex items-center gap-[0.6rem]">
+                    <span className="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center">
                       <svg
-                        className="w-5 h-5 text-red-400"
+                        className="w-4 h-4 text-red-400"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -244,18 +244,18 @@ export default function ProjectDetailPage({
                     </span>
                     {t("projectDetail.challenges")}
                   </h3>
-                  <p className="text-zinc-400 leading-relaxed">
+                  <p className="text-zinc-400 leading-relaxed text-justify text-[0.8rem] min-h-37">
                     {t(project.challenges!)}
                   </p>
                 </div>
               )}
 
               {project.solution && (
-                <div className="p-8 bg-white/5 border border-white/10 rounded-2xl">
-                  <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-3">
-                    <span className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
+                <div className="p-[1.6rem] bg-white/5 border border-white/10 rounded-2xl">
+                  <h3 className="text-[1.5rem] font-bold text-white mb-[0.4rem] flex items-center gap-[0.6rem]">
+                    <span className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center">
                       <svg
-                        className="w-5 h-5 text-green-400"
+                        className="w-4 h-4 text-green-400"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -270,7 +270,7 @@ export default function ProjectDetailPage({
                     </span>
                     {t("projectDetail.solution")}
                   </h3>
-                  <p className="text-zinc-400 leading-relaxed">
+                  <p className="text-zinc-400 leading-relaxed text-justify text-[0.8rem]">
                     {t(project.solution!)}
                   </p>
                 </div>

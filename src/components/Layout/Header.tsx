@@ -17,28 +17,28 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 left-0 right-0 z-50 bg-transparent">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="flex items-center justify-between h-25 py-8">
+      <div className="max-w-5xl mx-auto px-[1.6rem]">
+        <div className="flex items-center justify-between h-20 py-[1.6rem]">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center backdrop-blur-md px-8 py-4 rounded-full"
+            className="flex items-center backdrop-blur-md px-[1.6rem] py-[0.8rem] rounded-full"
           >
             <Image
               src="/Logo.png"
               alt={t("header.logoAlt")}
               width={1148}
               height={1148}
-              className="w-auto h-15"
+              className="w-auto h-12"
               priority
             />
           </Link>
 
           {/* Navigation */}
-          <nav className="flex items-center gap-20 backdrop-blur-md px-14 py-5 rounded-full">
+          <nav className="flex items-center gap-16 backdrop-blur-md px-[2.8rem] py-4 rounded-full">
             <Link
               href="/"
-              className={`w-28 text-center transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
+              className={`w-[5.6rem] text-center transition-colors text-[0.9rem] font-medium tracking-[0.12em] uppercase ${
                 pathname === "/"
                   ? "text-secondary"
                   : "text-white/90 hover:text-secondary"
@@ -48,7 +48,7 @@ export default function Header() {
             </Link>
             <Link
               href="/projects"
-              className={`w-28 text-center transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
+              className={`w-[5.6rem] text-center transition-colors text-[0.9rem] font-medium tracking-[0.12em] uppercase ${
                 pathname === "/projects" || pathname?.startsWith("/projects/")
                   ? "text-secondary"
                   : "text-white/90 hover:text-secondary"
@@ -58,7 +58,7 @@ export default function Header() {
             </Link>
             <Link
               href="/about"
-              className={`w-28 text-center transition-colors text-lg font-medium tracking-[0.15em] uppercase ${
+              className={`w-[5.6rem] text-center transition-colors text-[0.9rem] font-medium tracking-[0.12em] uppercase ${
                 pathname === "/about"
                   ? "text-secondary"
                   : "text-white/90 hover:text-secondary"
@@ -69,15 +69,21 @@ export default function Header() {
           </nav>
 
           {/* Right side icons */}
-          <div className="flex items-center gap-8 backdrop-blur-md px-8 py-4 rounded-full">
+          <div className="flex items-center gap-[1.6rem] backdrop-blur-md px-[1.6rem] py-[0.8rem] rounded-full">
             <button
               onClick={handleLanguageSwitch}
-              className="text-white/80 hover:text-secondary transition-colors"
+              className="flex items-center gap-1 text-white/80 hover:text-secondary transition-colors"
               aria-label={t("header.switchLanguageAria")}
             >
+              <span
+                className="text-sm font-medium"
+                style={{ fontFamily: '"Ahrefs", sans-serif' }}
+              >
+                {language.charAt(0).toUpperCase() + language.slice(1)}
+              </span>
               <svg
-                width="30"
-                height="30"
+                width="24"
+                height="24"
                 viewBox="0 0 25 25"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -107,8 +113,8 @@ export default function Header() {
               aria-label={t("header.emailAria")}
             >
               <svg
-                width="40"
-                height="40"
+                width="32"
+                height="32"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

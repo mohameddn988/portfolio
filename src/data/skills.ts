@@ -2,19 +2,19 @@ export const skills = [
   {
     label: "Web Dev",
     color: "bg-[#22D3C5]",
-    position: "left-[-180px] top-[120px]",
+    position: "left-[-144px] top-[96px]",
     icon: "/Cursor/BlueBanana.svg",
   },
   {
     label: "Mobile Dev",
     color: "bg-[#FF7AC8]",
-    position: "right-[-200px] top-[90px]",
+    position: "right-[-160px] top-[72px]",
     icon: "/Cursor/PurpleBanana.svg",
   },
   {
     label: "Cloud & DevOps",
     color: "bg-[#00D9FF]",
-    position: "right-[-310px] bottom-[120px]",
+    position: "right-[-248px] bottom-[96px]",
     icon: "/Cursor/GreenBanana.svg",
   },
 ];

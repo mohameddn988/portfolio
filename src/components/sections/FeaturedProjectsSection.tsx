@@ -11,21 +11,21 @@ const FeaturedProjects = () => {
   const { t } = useI18n();
 
   return (
-    <section className="pb-35 bg-primary">
+    <section className="pb-28 bg-primary">
       <SectionTitle
         title={t("featuredProjects.title")}
         backgroundText={t("featuredProjects.backgroundText")}
         subtitle={t("featuredProjects.subtitle")}
       />
 
-      <div className="max-w-250 mx-auto px-4 md:px-6 mt-10 flex flex-col gap-50">
+      <div className="max-w-200 mx-auto px-3 md:px-5 mt-8 flex flex-col gap-40">
         {projects
           .filter((project) => project.featured)
           .map((project, index) => (
             <Link
               key={index}
               href={`/projects/${project.id}`}
-              className="block group relative bg-linear-to-br from-[#1a1a1d] to-[#0f0f11] rounded-4xl p-5 md:p-6 border border-white/8 overflow-visible cursor-pointer transition-colors hover:border-secondary/20"
+              className="block group relative bg-linear-to-br from-[#1a1a1d] to-[#0f0f11] rounded-4xl p-4 md:p-5 border border-white/8 overflow-visible cursor-pointer transition-colors hover:border-secondary/20"
             >
               {/* Background Number */}
               <Image
@@ -33,14 +33,14 @@ const FeaturedProjects = () => {
                 alt={t("featuredProjects.projectLabel") + ` ${index + 1}`}
                 width={160}
                 height={160}
-                className="absolute top-0 right-0 w-32 md:w-36 lg:w-40 h-auto z-0 select-none pointer-events-none transform -translate-y-1/2 translate-x-14"
+                className="absolute top-0 right-0 w-26 md:w-29 lg:w-32 h-auto z-0 select-none pointer-events-none transform -translate-y-1/2 translate-x-11"
               />
 
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 relative z-10 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6 relative z-10 items-center">
                 {/* Vertical Tags - Left Side */}
                 <div className="hidden md:flex md:col-span-1 h-full items-center justify-start pl-2">
                   <div
-                    className="text-[10px] font-bold tracking-[0.25em] text-zinc-600 uppercase whitespace-nowrap"
+                    className="text-[8px] font-bold tracking-[0.2em] text-zinc-600 uppercase whitespace-nowrap"
                     style={{
                       writingMode: "vertical-rl",
                       transform: "rotate(180deg)",
@@ -54,9 +54,9 @@ const FeaturedProjects = () => {
                 </div>
 
                 {/* Project Image - Center */}
-                <div className="col-span-1 md:col-span-6 flex justify-center py-2 md:py-3">
+                <div className="col-span-1 md:col-span-6 flex justify-center py-2 md:py-2">
                   <div
-                    className={`relative w-full max-w-sm aspect-4/5 rounded-4xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.5)] transition-transform duration-500 ${project.FeaturedCover ? "" : "bg-linear-to-br from-[#7c3aed] via-[#8b5cf6] to-[#6366f1]"}`}
+                    className={`relative w-full max-w-xs aspect-4/5 rounded-4xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.5)] transition-transform duration-500 ${project.FeaturedCover ? "" : "bg-linear-to-br from-[#7c3aed] via-[#8b5cf6] to-[#6366f1]"}`}
                   >
                     {project.FeaturedCover ? (
                       // eslint-disable-next-line @next/next/no-img-element
@@ -102,28 +102,28 @@ const FeaturedProjects = () => {
                         />
 
                         {/* Small accent dots */}
-                        <div className="absolute top-[45%] right-[20%] w-4 h-4 rounded-full bg-linear-to-br from-purple-400 to-purple-600 shadow-lg" />
-                        <div className="absolute top-[28%] left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-linear-to-br from-yellow-200 to-yellow-400 shadow-md" />
+                        <div className="absolute top-[45%] right-[20%] w-3 h-3 rounded-full bg-linear-to-br from-purple-400 to-purple-600 shadow-lg" />
+                        <div className="absolute top-[28%] left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-linear-to-br from-yellow-200 to-yellow-400 shadow-md" />
                       </div>
                     )}
                   </div>
                 </div>
 
                 {/* Content - Right Side */}
-                <div className="col-span-1 md:col-span-5 flex flex-col justify-center gap-5 md:pl-4">
+                <div className="col-span-1 md:col-span-5 flex flex-col justify-center gap-4 md:pl-4">
                   <div>
-                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-none mb-2 group-hover:text-secondary transition-colors">
+                    <h3 className="text-[1.5rem] md:text-[1.8rem] lg:text-[2.4rem] font-bold text-white leading-none mb-2 group-hover:text-secondary transition-colors">
                       {t(project.title).split(" ")[0]}
                     </h3>
                     {t(project.title).split(" ").length > 1 && (
-                      <p className="text-lg md:text-xl text-zinc-400 font-light tracking-wide group-hover:text-zinc-300 transition-colors">
+                      <p className="text-[0.9rem] md:text-[1rem] text-zinc-400 font-light tracking-wide group-hover:text-zinc-300 transition-colors">
                         {t(project.title).split(" ").slice(1).join(" ")}
                       </p>
                     )}
                   </div>
 
                   {project.description && (
-                    <p className="text-sm md:text-base text-zinc-300 mt-2 leading-relaxed">
+                    <p className="text-[0.7rem] md:text-[0.8rem] text-zinc-300 mt-2 leading-relaxed text-justify">
                       {t(project.description).length > 200
                         ? t(project.description).slice(0, 200) + "..."
                         : t(project.description)}
@@ -135,7 +135,7 @@ const FeaturedProjects = () => {
                       {project.technologies.slice(0, 6).map((tech, idx) => (
                         <span
                           key={idx}
-                          className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-medium rounded-full border border-secondary/20"
+                          className="px-2 py-1 bg-secondary/10 text-secondary text-[0.6rem] font-medium rounded-full border border-secondary/20"
                         >
                           {tech}
                         </span>
@@ -143,11 +143,11 @@ const FeaturedProjects = () => {
                     </div>
                   )}
 
-                  <div className="relative text-secondary/80 text-xs md:text-sm font-bold tracking-[0.3em] uppercase group-hover:text-secondary transition-colors w-fit pb-1 border-b-2 border-secondary/80 group-hover:border-secondary">
+                  <div className="relative text-secondary/80 text-[0.6rem] md:text-[0.7rem] font-bold tracking-[0.24em] uppercase group-hover:text-secondary transition-colors w-fit pb-1 border-b-2 border-secondary/80 group-hover:border-secondary">
                     {t("featuredProjects.viewDetails")}
                   </div>
 
-                  <div className="flex gap-5 mt-2">
+                  <div className="flex gap-4 mt-2">
                     {project.github && (
                       <a
                         href={project.github}
@@ -157,8 +157,8 @@ const FeaturedProjects = () => {
                       >
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
+                          width="16"
+                          height="16"
                           viewBox="0 0 24 24"
                           fill="none"
                           stroke="currentColor"

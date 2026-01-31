@@ -13,8 +13,8 @@ export default function HeroSection() {
   const [skillOffsets] = useState<
     Record<string, { x: number; y: number; duration: number; delay: number }>
   >(() => {
-    const xOffsets = [10, -8, 12, -10, 9, -7, 11, -9];
-    const yOffsets = [-7, 9, -10, 8, -9, 11, -6, 10];
+    const xOffsets = [8, -6.4, 9.6, -8, 7.2, -5.6, 8.8, -7.2];
+    const yOffsets = [-5.6, 7.2, -8, 6.4, -7.2, 8.8, -4.8, 8];
     const durations = [3.2, 2.8, 3.0];
     const delays = [0, 0.2, 0.1];
 
@@ -59,7 +59,7 @@ export default function HeroSection() {
   }, []);
 
   useEffect(() => {
-    const maxScroll = 700;
+    const maxScroll = 560;
     const minScale = 0.5;
 
     const handleScroll = () => {
@@ -109,24 +109,24 @@ export default function HeroSection() {
 
   return (
     <div className="relative">
-      <section className="sticky top-15 flex flex-col items-center justify-center pb-16 pt-8 z-0">
+      <section className="sticky top-12 flex flex-col items-center justify-center pb-[3.2rem] pt-[1.6rem] z-0">
         {" "}
         {/* top-25 is the ideal*/}{" "}
         <div
-          className="flex flex-col items-center gap-6 will-change-transform"
+          className="flex flex-col items-center gap-[1.2rem] will-change-transform"
           style={{
             transform: `scale(${heroScale})`,
             transformOrigin: "center",
           }}
         >
-          <span className="text-white/40 tracking-[0.3em] text-md md:text-lg lg:text-xl uppercase font-bold">
+          <span className="text-white/40 tracking-[0.24em] text-[0.7rem] md:text-[0.9rem] lg:text-[1rem] uppercase font-bold">
             {t("hero.name")}
           </span>
           <h1 className="flex flex-col items-center leading-[0.85] font-bold text-center tracking-tight">
             {headlineLines.map((line, index) => (
               <span
                 key={line.text}
-                className={`text-[5rem] sm:text-[7rem] md:text-[9rem] lg:text-[11rem] ${
+                className={`text-[4rem] sm:text-[5.6rem] md:text-[7.2rem] lg:text-[8.8rem] ${
                   line.muted ? "text-white/30" : "text-white"
                 } relative inline-block`}
               >
@@ -142,11 +142,11 @@ export default function HeroSection() {
         </div>
       </section>
 
-      <section className="relative z-10 flex flex-col items-center justify-center pb-5 pt-8 mt-[5vh]">
+      <section className="relative z-10 flex flex-col items-center justify-center pb-4 pt-[1.6rem] mt-[4vh]">
         <div className="relative flex items-center justify-center">
-          <div className="relative h-130 w-100 sm:h-155 sm:w-120">
-            <div className="absolute -inset-3.5 rounded-[42px] bg-primary" />
-            <div className="relative h-full w-full overflow-hidden rounded-[36px]">
+          <div className="relative h-104 w-80 sm:h-124 sm:w-96">
+            <div className="absolute -inset-[0.7rem] rounded-[33.6px] bg-primary" />
+            <div className="relative h-full w-full overflow-hidden rounded-[28.8px]">
               <Image
                 src="/Myself.png"
                 alt={t("hero.portraitAlt")}
@@ -170,28 +170,28 @@ export default function HeroSection() {
                 }
               >
                 {skill.label === "Web Dev" && (
-                  <BlueBananaIcon className="h-10 w-10" />
+                  <BlueBananaIcon className="h-8 w-8" />
                 )}
                 {skill.label === "Mobile Dev" && (
-                  <PurpleBananaIcon className="h-10 w-10" />
+                  <PurpleBananaIcon className="h-8 w-8" />
                 )}
                 {skill.label === "Cloud & DevOps" && (
-                  <GreenBananaIcon className="h-10 w-10" />
+                  <GreenBananaIcon className="h-8 w-8" />
                 )}
                 <span
-                  className={`translate-x-8 -translate-y-2 rounded-full px-7 py-3 text-xl font-semibold text-white shadow-[0_10px_25px_rgba(0,0,0,0.35)] ${skill.color}`}
+                  className={`translate-x-6 -translate-y-2 rounded-full px-[1.4rem] py-[0.6rem] text-[1rem] font-semibold text-white shadow-[0_8px_20px_rgba(0,0,0,0.35)] ${skill.color}`}
                 >
                   {t(skill.label)}
                 </span>
               </div>
             ))}
-            <div className="absolute -bottom-5 -right-4 flex items-center gap-3 rounded-full bg-[#3A3A3A] px-6 py-3 shadow-[0_10px_25px_rgba(0,0,0,0.35)]">
+            <div className="absolute -bottom-4 -right-[0.8rem] flex items-center gap-[0.6rem] rounded-full bg-[#3A3A3A] px-[1.2rem] py-[0.6rem] shadow-[0_8px_20px_rgba(0,0,0,0.35)]">
               <Image
                 src="/Logo.png"
                 alt={t("hero.logoAlt")}
                 width={548}
                 height={548}
-                className="h-14 w-auto object-contain"
+                className="h-[2.8rem] w-auto object-contain"
               />
             </div>
           </div>
