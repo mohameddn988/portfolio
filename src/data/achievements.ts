@@ -8,13 +8,13 @@ export interface Achievement {
 export const achievements: Achievement[] = [
   {
     id: "masters-degree",
-    year: "2026",
+    year: "2024 - 2026",
     title: "achievements.mastersDegree.title",
     description: "achievements.mastersDegree.description",
   },
   {
     id: "bachelors-degree",
-    year: "2024",
+    year: "2021 - 2024",
     title: "achievements.bachelorsDegree.title",
     description: "achievements.bachelorsDegree.description",
   },

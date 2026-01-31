@@ -18,7 +18,7 @@ const FeaturedProjects = () => {
         subtitle={t("featuredProjects.subtitle")}
       />
 
-      <div className="max-w-200 mx-auto px-3 md:px-5 mt-8 flex flex-col gap-40">
+      <div className="max-w-200 mx-auto px-3 md:px-5 mt-8 flex flex-col gap-30 md:gap-40">
         {projects
           .filter((project) => project.featured)
           .map((project, index) => (
@@ -27,17 +27,25 @@ const FeaturedProjects = () => {
               href={`/projects/${project.id}`}
               className="block group relative bg-linear-to-br from-[#1a1a1d] to-[#0f0f11] rounded-4xl p-4 md:p-5 border border-white/8 overflow-visible cursor-pointer transition-colors hover:border-secondary/20"
             >
-              {/* Background Number */}
+              {/* Background Number - move left on mobile */}
               <Image
                 src={`/Project/Number${["One", "Two", "Three", "Four"][index % 4]}.svg`}
                 alt={t("featuredProjects.projectLabel") + ` ${index + 1}`}
-                width={160}
-                height={160}
-                className="absolute top-0 right-0 w-26 md:w-29 lg:w-32 h-auto z-0 select-none pointer-events-none transform -translate-y-1/2 translate-x-11"
+                width={460}
+                height={460}
+                className="absolute top-0 right-0 w-26 md:w-29 lg:w-32 h-auto z-0 select-none pointer-events-none transform -translate-y-1/2 -translate-x-1 md:translate-x-11"
               />
 
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6 relative z-10 items-center">
-                {/* Vertical Tags - Left Side */}
+              <div className="flex flex-col md:grid md:grid-cols-12 gap-5 md:gap-6 relative z-10 items-center">
+                {/* Tags - horizontal on mobile, vertical on desktop */}
+                <div className="flex md:hidden w-full mb-2 justify-center">
+                  <div className="text-[0.6rem] font-bold tracking-[0.2em] text-zinc-600 uppercase">
+                    {project.tags
+                      .slice(0, 3)
+                      .map((tag) => t(tag))
+                      .join(" ")}
+                  </div>
+                </div>
                 <div className="hidden md:flex md:col-span-1 h-full items-center justify-start pl-2">
                   <div
                     className="text-[8px] font-bold tracking-[0.2em] text-zinc-600 uppercase whitespace-nowrap"
@@ -54,9 +62,9 @@ const FeaturedProjects = () => {
                 </div>
 
                 {/* Project Image - Center */}
-                <div className="col-span-1 md:col-span-6 flex justify-center py-2 md:py-2">
+                <div className="order-2 md:order-0 col-span-1 md:col-span-6 flex justify-center py-2 md:py-2 w-full">
                   <div
-                    className={`relative w-full max-w-xs aspect-4/5 rounded-4xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.5)] transition-transform duration-500 ${project.FeaturedCover ? "" : "bg-linear-to-br from-[#7c3aed] via-[#8b5cf6] to-[#6366f1]"}`}
+                    className={`relative w-full max-w-xs aspect-video md:aspect-4/5 rounded-4xl overflow-hidden shadow-[0_16px_48px_rgba(0,0,0,0.5)] transition-transform duration-500 ${project.FeaturedCover ? "" : "bg-linear-to-br from-[#7c3aed] via-[#8b5cf6] to-[#6366f1]"}`}
                   >
                     {project.FeaturedCover ? (
                       // eslint-disable-next-line @next/next/no-img-element
@@ -110,13 +118,13 @@ const FeaturedProjects = () => {
                 </div>
 
                 {/* Content - Right Side */}
-                <div className="col-span-1 md:col-span-5 flex flex-col justify-center gap-4 md:pl-4">
+                <div className="order-3 md:order-0 col-span-1 md:col-span-5 flex flex-col justify-center gap-4 md:pl-4 w-full">
                   <div>
-                    <h3 className="text-[1.5rem] md:text-[1.8rem] lg:text-[2.4rem] font-bold text-white leading-none mb-2 group-hover:text-secondary transition-colors">
+                    <h3 className="text-[1.5rem] md:text-[1.8rem] lg:text-[2.4rem] font-bold text-white leading-none mb-2 group-hover:text-secondary transition-colors text-center md:text-left">
                       {t(project.title).split(" ")[0]}
                     </h3>
                     {t(project.title).split(" ").length > 1 && (
-                      <p className="text-[0.9rem] md:text-[1rem] text-zinc-400 font-light tracking-wide group-hover:text-zinc-300 transition-colors">
+                      <p className="text-[0.9rem] md:text-[1rem] text-zinc-400 font-light tracking-wide group-hover:text-zinc-300 transition-colors text-center md:text-left">
                         {t(project.title).split(" ").slice(1).join(" ")}
                       </p>
                     )}

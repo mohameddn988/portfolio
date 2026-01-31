@@ -46,8 +46,8 @@ export default function ProjectsPage() {
       </div>
 
       {/* Projects Grid */}
-      <div className="max-w-280 mx-auto px-[0.8rem] md:px-[1.2rem] mt-[2.4rem] pb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.6rem]">
+      <div className="max-w-280 mx-auto px-[1.6rem] md:px-[1.2rem] mt-[2.4rem] pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.2rem] md:gap-[1.6rem]">
           {filteredProjects.map((project) => (
             <Link
               key={project.id}

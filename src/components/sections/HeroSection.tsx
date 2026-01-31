@@ -109,7 +109,7 @@ export default function HeroSection() {
 
   return (
     <div className="relative">
-      <section className="sticky top-12 flex flex-col items-center justify-center pb-[3.2rem] pt-[1.6rem] z-0">
+      <section className="sticky top-12 flex flex-col items-center justify-center pb-[2.4rem] pt-[1.6rem] z-0  h-[calc(80vh)] md:h-[calc(90vh)] ">
         {" "}
         {/* top-25 is the ideal*/}{" "}
         <div
@@ -185,7 +185,7 @@ export default function HeroSection() {
                 </span>
               </div>
             ))}
-            <div className="absolute -bottom-4 -right-[0.8rem] flex items-center gap-[0.6rem] rounded-full bg-[#3A3A3A] px-[1.2rem] py-[0.6rem] shadow-[0_8px_20px_rgba(0,0,0,0.35)]">
+            <div className="absolute -bottom-4 -right-[0.8rem] hidden lg:flex items-center gap-[0.6rem] rounded-full bg-[#3A3A3A] px-[1.2rem] py-[0.6rem] shadow-[0_8px_20px_rgba(0,0,0,0.35)]">
               <Image
                 src="/Logo.png"
                 alt={t("hero.logoAlt")}

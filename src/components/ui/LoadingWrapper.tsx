@@ -40,18 +40,19 @@ export default function LoadingWrapper({ children }: LoadingWrapperProps) {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-background">
-        <div className="flex items-center gap-8">
+        <div className="flex items-center justify-center gap-3 md:gap-8">
           <div className="shrink-0">
             <Image
               src="/Logo.png"
               alt="Portfolio Logo"
-              width={80}
-              height={80}
+              width={460}
+              height={460}
+              className="w-full h-8 md:w-full md:h-16"
               priority
             />
           </div>
           <div className="text-left">
-            <h1 className="text-4xl font-normal text-white mb-2 min-h-12 flex items-center">
+            <h1 className="text-xl md:text-4xl font-normal text-white mb-2 min-h-6 md:min-h-12 flex items-center justify-center">
               {typedText}
               <span className="animate-pulse text-white">|</span>
             </h1>

@@ -71,10 +71,12 @@ body {
 body::after {
   content: "";
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: var(--bg-noise-image);
   background-repeat: repeat;
-  background-attachment: fixed;
   opacity: var(--bg-noise-opacity);
   pointer-events: none;
   z-index: 60;
@@ -140,4 +142,29 @@ textarea {
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
+}
+
+/* Hide scrollbar for carousel */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Infinite carousel animation */
+@keyframes carousel-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+.animate-carousel {
+  animation: carousel-scroll 15s linear infinite;
+  width: 400%; /* 4 sets of images for smooth infinite loop */
 }
