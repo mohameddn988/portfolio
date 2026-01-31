@@ -19,12 +19,10 @@ const IconCloud = dynamic(() => import("@/components/ui/icon-cloud"), {
 
 const InteractiveCarousel = () => {
   const [isPaused, setIsPaused] = useState(false);
-  const [isScrolling, setIsScrolling] = useState(false);
   const carouselRef = useRef<HTMLDivElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleScroll = () => {
-    setIsScrolling(true);
     setIsPaused(true);
 
     // Clear existing timeout
@@ -34,7 +32,6 @@ const InteractiveCarousel = () => {
 
     // Set new timeout to resume auto-scroll after 2 seconds of no scrolling
     timeoutRef.current = setTimeout(() => {
-      setIsScrolling(false);
       setIsPaused(false);
     }, 2000);
   };
