@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.com"), // Replace with your actual domain
+  metadataBase: new URL("https://mohamed-deneche-portfolio.vercel.app/"), // Replace with your actual domain
   title: "Deneche Mohamed | Full-Stack & Mobile Developer Portfolio",
   description:
     "Explore the portfolio of Deneche Mohamed, a passionate full-stack and mobile developer specializing in modern web technologies, mobile apps, innovative projects, and creative solutions.",
@@ -39,7 +39,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Deneche Mohamed" }],
   creator: "Deneche Mohamed",
   icons: {
-    icon: "/Logo.png",
+    icon: [
+      { url: "/Logo.png", sizes: "any" },
+      { url: "/Logo.png", sizes: "16x16", type: "image/png" },
+      { url: "/Logo.png", sizes: "32x32", type: "image/png" },
+    ],
     shortcut: "/Logo.png",
     apple: "/Logo.png",
   },

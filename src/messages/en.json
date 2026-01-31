@@ -10,7 +10,7 @@
     "emailAria": "Email"
   },
   "hero": {
-    "name": "DENECHE MOHAMED",
+    "name": "MOHAMED DENECHE",
     "line1": "DESIGNING",
     "line2": "SIMPLICITY",
     "line3": "WITH",
@@ -47,7 +47,7 @@
     "title": "Get to Know Me!",
     "subtitle": "Let me introduce myself briefly",
     "greeting": "Hi, I'm",
-    "name": "Deneche Mohamed",
+    "name": "Mohamed Deneche",
     "role": "Full Stack & Mobile Developer",
     "bio1": "I'm a fullstack and mobile developer passionate about creating elegant solutions to complex problems. With expertise in both frontend and backend technologies, I build seamless, scalable applications that make a real impact.",
     "bio2": "Driven by curiosity and continuous learning, I specialize in architecting APIs, optimizing databases, and developing cross-platform mobile apps. I value clean code, collaboration, and innovative thinking in creating meaningful digital solutions.",
@@ -220,7 +220,7 @@
     "emailMe": "Email Me",
     "sectionTitle": {
       "backgroundText": "CONTACT",
-      "title": "dont be a stranger!",
+      "title": "don't be a stranger!",
       "subtitle": "Let's be friends, hit me out on the social media through the links below"
     },
     "social": {
