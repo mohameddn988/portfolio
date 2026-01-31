@@ -21,9 +21,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mohamed-deneche-portfolio.vercel.app/"), // Replace with your actual domain
-  title: "Deneche Mohamed | Full-Stack & Mobile Developer Portfolio",
+  title: "Mohamed Deneche | Full-Stack & Mobile Developer Portfolio",
   description:
-    "Explore the portfolio of Deneche Mohamed, a passionate full-stack and mobile developer specializing in modern web technologies, mobile apps, innovative projects, and creative solutions.",
+    "Explore the portfolio of Mohamed Deneche, a passionate full-stack and mobile developer specializing in modern web technologies, mobile apps, innovative projects, and creative solutions.",
   keywords: [
     "full-stack developer",
     "mobile developer",
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     "TypeScript",
     "JavaScript",
   ],
-  authors: [{ name: "Deneche Mohamed" }],
-  creator: "Deneche Mohamed",
+  authors: [{ name: "Mohamed Deneche" }],
+  creator: "Mohamed Deneche",
   icons: {
     icon: [
       { url: "/Logo.png", sizes: "any" },
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     apple: "/Logo.png",
   },
   openGraph: {
-    title: "Deneche Mohamed | Full-Stack & Mobile Developer Portfolio",
+    title: "Mohamed Deneche | Full-Stack & Mobile Developer Portfolio",
     description:
-      "Explore the portfolio of Deneche Mohamed, a passionate full-stack and mobile developer specializing in modern web technologies and mobile apps.",
+      "Explore the portfolio of Mohamed Deneche, a passionate full-stack and mobile developer specializing in modern web technologies and mobile apps.",
     type: "website",
     locale: "en_US",
     images: [
@@ -58,15 +58,15 @@ export const metadata: Metadata = {
         url: "/LinkPreviewImage.png",
         width: 1200,
         height: 630,
-        alt: "Deneche Mohamed - Full-Stack & Mobile Developer Portfolio",
+        alt: "Mohamed Deneche - Full-Stack & Mobile Developer Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deneche Mohamed | Full-Stack & Mobile Developer Portfolio",
+    title: "Mohamed Deneche | Full-Stack & Mobile Developer Portfolio",
     description:
-      "Explore the portfolio of Deneche Mohamed, a passionate full-stack and mobile developer specializing in modern web technologies and mobile apps.",
+      "Explore the portfolio of Mohamed Deneche, a passionate full-stack and mobile developer specializing in modern web technologies and mobile apps.",
     images: ["/LinkPreviewImage.png"],
   },
 };

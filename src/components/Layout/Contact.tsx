@@ -23,13 +23,13 @@ export default function Contact() {
           <Link
             href="https://wa.me/213665954002"
             target="_blank"
-            className="px-4 py-2 md:px-6 md:py-3 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-colors text-sm md:text-base font-medium"
+            className="px-4 py-2 md:px-6 md:py-3 border-2 border-white/30 text-white rounded-2xl hover:bg-white/10 transition-colors text-sm md:text-base font-medium"
           >
             {t("contact.messageMe")}
           </Link>
           <Link
             href="mailto:msideneche@gmail.com"
-            className="px-4 py-2 md:px-6 md:py-3 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-colors text-sm md:text-base font-medium"
+            className="px-4 py-2 md:px-6 md:py-3 border-2 border-white/30 text-white rounded-2xl hover:bg-white/10 transition-colors text-sm md:text-base font-medium"
           >
             {t("contact.emailMe")}
           </Link>
