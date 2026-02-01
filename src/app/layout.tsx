@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mohamed-deneche-portfolio.vercel.app/"), // Replace with your actual domain
+  metadataBase: new URL("https://mohamed.deneche.me/"), // Replace with your actual domain
   title: "Mohamed Deneche | Full-Stack & Mobile Developer Portfolio",
   description:
     "Explore the portfolio of Mohamed Deneche, a passionate full-stack and mobile developer specializing in modern web technologies, mobile apps, innovative projects, and creative solutions.",
@@ -56,9 +56,11 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/LinkPreviewImage.png",
+        secureUrl: "/LinkPreviewImage.png",
         width: 1200,
         height: 630,
         alt: "Mohamed Deneche - Full-Stack & Mobile Developer Portfolio",
+        type: "image/png",
       },
     ],
   },
